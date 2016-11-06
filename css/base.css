@@ -99,9 +99,6 @@ nav {
 .menu ul li.mobile-btn {
   display: none; }
 
-.blog-btn {
-  visibility: show; }
-
 .menu ul li a:hover + .hidden,
 .hidden:hover {
   display: block;
@@ -109,18 +106,12 @@ nav {
 
 /* Style 'show menu' label button and hide it by default */
 .show-menu {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-decoration: none;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
   display: none;
-  text-indent: -9999; }
+  text-indent: -9999;
+  font-size: 18px; }
 
-.close-menu {
-  background: #19c589;
-  height: 48px;
-  position: relative; }
+.nav__open-button {
+  display: none; }
 
 .close-position {
   position: absolute;
@@ -132,58 +123,59 @@ nav {
 /* Hide checkbox */
 input[type=checkbox] {
   display: none;
-  -webkit-appearance: none; }
-
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 36px;
-  /* Preferred icon size */
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga'; }
+  -webkit-appearance: none;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s; }
 
 @media screen and (max-width: 480px) {
+  .logo-container {
+    padding: 18px 0 14px 10px; }
+
+  nav {
+    font-size: 22px; }
+
   input[type=checkbox]:checked ~ .menu ul {
     display: block;
-    left: 20px; }
+    opacity: 1; }
 
-  /* Make dropdown links appear inline */
+  /*
+    Nav container
+  */
   .menu ul {
     -webkit-transition: all 0.8s;
     -moz-transition: all 0.8s;
     -ms-transition: all 0.8s;
     -o-transition: all 0.8s;
     transition: all 0.8s;
-    position: static;
-    display: block;
-    background: #19c589;
-    width: 100%;
+    background: rgba(78, 58, 105, 0.98);
+    box-shadow: inset 1px 1px 30px #342646;
+    display: none;
     height: 100%;
     position: fixed;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    left: 0;
     top: 0;
-    left: 900px;
-    box-shadow: 0 0 10px; }
+    bottom: 0;
+    right: 0;
+    margin: auto; }
 
+  /*
+    Hiding dropdown nav on mobile. Not needed yet.
+  */
   .menu ul li ul {
     display: none !important; }
 
-  /*Create vertical spacing*/
   .menu ul li {
     border: none; }
 
-  /*Make all menu links full width*/
+  /*
+    Make all links on mobile full width
+  */
   .menu ul li,
   .menu ul li a {
     width: 100%; }
@@ -191,27 +183,21 @@ input[type=checkbox] {
   .menu ul li {
     border-radius: 0; }
 
-  .menu ul li a {
-    border-bottom: solid 1px #19c589; }
-
   .menu ul li a:hover {
     border-radius: 0 !important; }
 
   .menu ul li a:active {
     background-color: #d00 !important; }
 
-  .show-menu {
-    display: block; }
+  .nav__open-button {
+    padding: 18px 8px 0 0;
+    display: inline-block; }
 
-  .img-fill {
-    display: inline-block;
-    height: 48px;
-    width: 48px;
-    background-color: #0cb78a;
-    float: right;
-    position: absolute;
-    top: 0;
-    right: 0; }
+  .show-menu {
+    display: block;
+    color: #fff;
+    text-align: right;
+    padding: 16px 13px; }
 
   .menu-position {
     position: absolute;
@@ -220,6 +206,10 @@ input[type=checkbox] {
     bottom: 0;
     right: 0;
     left: 0; } }
+/* End navigation */
+/*
+  Animated loader for codepen
+*/
 .css-tricker__loader {
   width: 100%;
   background-image: url("/img/loader.gif");
@@ -227,6 +217,9 @@ input[type=checkbox] {
   background-position: center;
   background-repeat: no-repeat; }
 
+/*
+ Art tag
+*/
 .tag-container {
   display: inline-flex;
   margin: 0;
@@ -241,6 +234,9 @@ input[type=checkbox] {
   margin-right: 3px;
   border-radius: 3px; }
 
+/*
+  Designs Layout
+*/
 .designs-container {
   display: flex;
   width: 100%;
@@ -357,7 +353,7 @@ input[type=checkbox] {
 
 footer {
   background-color: #3b3148;
-  color: #ffffff;
+  color: #fff;
   font-family: 'Rokkitt', serif;
   font-size: 18px;
   padding: 8px 18px;
@@ -370,3 +366,41 @@ footer {
     flex: 1; }
   footer div:nth-child(even) {
     text-align: right; }
+
+@media only screen and (max-width: 40.063em) {
+  .home-container {
+    margin: 0;
+    width: 100%;
+    flex-direction: column; }
+
+  .home-container:last-of-type {
+    margin-bottom: 0; }
+
+  .home-container__col-1 {
+    width: 100%;
+    margin: 0; }
+
+  .home-container__col-1--text {
+    padding: 15px 32px; }
+
+  .home-links-container {
+    flex-direction: column;
+    display: flex;
+    font-size: inherit;
+    margin-bottom: 18px;
+    margin-left: -8px; }
+    .home-links-container a {
+      padding: 8px; }
+
+  .recent-post__background {
+    padding: 12px 32px;
+    height: inherit; }
+
+  .recent-post__background:after {
+    background-size: 110%;
+    background-position: -10%; }
+
+  footer {
+    position: inherit;
+    text-align: center !important;
+    flex-direction: column; } }
