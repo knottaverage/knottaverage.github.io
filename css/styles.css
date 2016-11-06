@@ -295,7 +295,7 @@ input[type=checkbox] {
 
 .home-container__col-1 {
   width: 710px;
-  margin-right: 10px; }
+  margin-right: 15px; }
 
 .home-container__col-1--text {
   padding: 15px 50px;
@@ -309,6 +309,9 @@ input[type=checkbox] {
   display: flex;
   font-size: 22px;
   margin-bottom: 18px; }
+
+.home-container:last-of-type {
+  margin-bottom: 100px; }
 
 .home-links-container a {
   display: inline-flex;
