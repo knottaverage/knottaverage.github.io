@@ -1,0 +1,226 @@
+/* line 5, ../sass/home.scss */
+#home-overflow {
+  height: 90%;
+  overflow: hidden;
+  position: relative;
+  min-height: 700px;
+}
+@media only screen and (max-width: 64.063em) {
+  /* line 5, ../sass/home.scss */
+  #home-overflow {
+    overflow: visible;
+    min-height: initial;
+    height: initial;
+  }
+}
+
+/* line 16, ../sass/home.scss */
+.overflow-container {
+  position: relative;
+  height: 80%;
+}
+@media only screen and (max-width: 40.063em) {
+  /* line 16, ../sass/home.scss */
+  .overflow-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* line 24, ../sass/home.scss */
+.headline-container {
+  position: absolute;
+  height: 300px;
+  /* margin: auto; */
+  top: 25%;
+  /* bottom: 0; */
+  left: 10%;
+  max-width: 1200px;
+  margin: auto;
+  right: 0;
+}
+/* line 34, ../sass/home.scss */
+.headline-container h3 {
+  color: #fff;
+  text-shadow: 3px 3px 3px #333;
+  font-size: 4.2em;
+  padding: 0;
+  margin: 16px 0;
+  font-family: 'Oswald', sans-serif;
+}
+@media only screen and (max-width: 40.063em) {
+  /* line 24, ../sass/home.scss */
+  .headline-container {
+    position: relative;
+    order: 2;
+  }
+}
+
+/* line 47, ../sass/home.scss */
+.venue {
+  background-color: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+/* line 54, ../sass/home.scss */
+.home-find-tickets {
+  border: solid 3px #fff;
+  background: #d00;
+  display: block;
+  width: 214px;
+  font-size: 24px;
+  text-align: center;
+  padding: 13px;
+  color: #fff;
+  margin: 28px 0;
+}
+
+/* line 66, ../sass/home.scss */
+.img-container img {
+  width: 100%;
+}
+@media only screen and (max-width: 40.063em) {
+  /* line 65, ../sass/home.scss */
+  .img-container {
+    order: 1;
+  }
+}
+
+/* For when at top scroll
+#home-overflow {
+    // height: 90%;
+    overflow: hidden;
+    // position: relative;
+    min-height: 700px;
+}*/
+/* line 80, ../sass/home.scss */
+.home {
+  position: absolute;
+  background: rgba(34, 34, 34, 0.85);
+  z-index: 101;
+}
+@media only screen and (max-width: 40.063em) {
+  /* line 80, ../sass/home.scss */
+  .home {
+    position: relative;
+  }
+}
+
+/* line 88, ../sass/home.scss */
+.bottom-home-bar {
+  height: 160px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  border-top: solid 2px #525d64;
+  border-bottom: solid 2px #525d64;
+}
+@media only screen and (max-width: 40.063em) {
+  /* line 88, ../sass/home.scss */
+  .bottom-home-bar {
+    position: relative;
+    height: initial;
+    overflow-x: scroll;
+    padding: 6px 0;
+  }
+}
+@media only screen and (max-width: 64.063em) {
+  /* line 88, ../sass/home.scss */
+  .bottom-home-bar {
+    background-color: rgba(0, 0, 0, 0.95);
+    position: relative;
+  }
+}
+
+/* For use when at top scroll
+
+    .bottom-home-bar {
+        height: 160px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+        position: fixed;
+        bottom: 0;
+        max-width: 100%;
+        border-top: solid 2px #525d64;
+        border-bottom: solid 2px #525d64;
+    }
+
+
+
+*/
+/* line 124, ../sass/home.scss */
+.bottom-home-bar-row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1285px;
+  margin: 0 auto;
+  align-items: stretch;
+  height: 100%;
+}
+/* line 137, ../sass/home.scss */
+.bottom-home-bar-row .bottom-column {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  ms-flex: 1;
+  flex: 1;
+  text-align: center;
+  align-self: center;
+  margin: 6px;
+}
+/* line 146, ../sass/home.scss */
+.bottom-home-bar-row .bottom-column a {
+  display: block;
+  color: #fff;
+}
+/* line 149, ../sass/home.scss */
+.bottom-home-bar-row .bottom-column a span {
+  display: block;
+}
+@media only screen and (max-width: 40.063em) {
+  /* line 137, ../sass/home.scss */
+  .bottom-home-bar-row .bottom-column {
+    margin: 4px;
+  }
+}
+@media only screen and (max-width: 40.063em) {
+  /* line 124, ../sass/home.scss */
+  .bottom-home-bar-row {
+    width: 240%;
+    overflow-x: scroll;
+  }
+}
+
+/* line 162, ../sass/home.scss */
+.below-fold-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1285px;
+  margin: 0 auto;
+}
+/* line 173, ../sass/home.scss */
+.below-fold-container div {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  ms-flex: 1;
+  flex: 1;
+  margin: 8px;
+}
