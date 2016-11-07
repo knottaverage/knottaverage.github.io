@@ -372,10 +372,12 @@ input[type=checkbox] {
   background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 0 0 1px #999; }
   .post-container h2 {
-    align-self: flex-end;
+    align-self: center;
     padding: 0px 23px;
     margin: 0;
-    color: #fff; }
+    color: #fff;
+    font-size: 54px;
+    line-height: 0.85; }
 
 .post-container__heading-overlay {
   background-color: rgba(0, 0, 0, 0.8);
@@ -391,7 +393,7 @@ input[type=checkbox] {
   padding: 0 12px;
   background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 0 0 1px #999;
-  flex-grow: 0;
+  align-self: flex-start;
   flex: 1; }
 
 .side-archive-container__heading {
