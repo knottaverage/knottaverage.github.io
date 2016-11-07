@@ -1,3 +1,6 @@
+:root {
+  font-family: 'Rokkitt', serif; }
+
 body {
   margin: 0;
   padding: 0;
@@ -28,11 +31,15 @@ body {
 a {
   text-decoration: none; }
 
+/* ==========
+
+  Start Navigation
+
+========== */
 nav {
   background-color: #4E3A69;
   color: #fff;
   display: flex;
-  font-family: 'Rokkitt', serif;
   font-size: 24px;
   position: relative; }
 
@@ -107,20 +114,12 @@ nav {
 /* Style 'show menu' label button and hide it by default */
 .show-menu {
   display: none;
-  text-indent: -9999;
-  font-size: 18px; }
+  text-indent: -9999; }
 
 .nav__open-button {
   display: none; }
 
-.close-position {
-  position: absolute;
-  margin: auto;
-  left: 10px;
-  top: 0;
-  bottom: 0; }
-
-/* Hide checkbox */
+/* Hide Nav checkbox */
 input[type=checkbox] {
   display: none;
   -webkit-appearance: none;
@@ -135,14 +134,14 @@ input[type=checkbox] {
     padding: 18px 0 14px 10px; }
 
   nav {
-    font-size: 22px; }
+    font-size: 20px; }
 
   input[type=checkbox]:checked ~ .menu ul {
     display: block;
     opacity: 1; }
 
   /*
-    Nav container
+    Menu container
   */
   .menu ul {
     -webkit-transition: all 0.8s;
@@ -164,6 +163,9 @@ input[type=checkbox] {
     right: 0;
     margin: auto; }
 
+  .menu ul li:nth-child(2) {
+    margin-top: 20px; }
+
   /*
     Hiding dropdown nav on mobile. Not needed yet.
   */
@@ -171,7 +173,7 @@ input[type=checkbox] {
     display: none !important; }
 
   .menu ul li {
-    border: none; }
+    font-size: 36px; }
 
   /*
     Make all links on mobile full width
@@ -190,14 +192,17 @@ input[type=checkbox] {
     background-color: #d00 !important; }
 
   .nav__open-button {
-    padding: 18px 8px 0 0;
+    padding: 18px 10px;
     display: inline-block; }
+
+  .nav__close-button {
+    font-size: 20px; }
 
   .show-menu {
     display: block;
     color: #fff;
     text-align: right;
-    padding: 16px 13px; }
+    padding: 18px 10px; }
 
   .menu-position {
     position: absolute;
@@ -234,9 +239,11 @@ input[type=checkbox] {
   margin-right: 3px;
   border-radius: 3px; }
 
-/*
+/* ==========
+
   Designs Layout
-*/
+
+========== */
 .designs-container {
   display: flex;
   width: 100%;
@@ -279,9 +286,13 @@ input[type=checkbox] {
   color: #222;
   background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 0 0 1px #999;
-  font-family: 'Rokkitt', serif;
   flex-grow: 0; }
 
+/* ==========
+
+  Home
+
+========== */
 .home-container {
   width: 950px;
   margin: 20px auto;
@@ -296,8 +307,7 @@ input[type=checkbox] {
   font-size: 36px;
   color: #222;
   background-color: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 0 1px #999;
-  font-family: 'Rokkitt', serif; }
+  box-shadow: 0 0 1px #999; }
 
 .home-links-container {
   display: flex;
@@ -326,7 +336,6 @@ input[type=checkbox] {
   height: 259px;
   padding: 12px;
   background-color: rgba(0, 0, 0, 0.75);
-  font-family: 'Rokkitt', serif;
   color: #fff;
   padding-top: 29px; }
   .recent-post__background a {
@@ -347,14 +356,55 @@ input[type=checkbox] {
 
 .recent-post__header {
   color: #fff;
-  font-size: 21px;
-  text-shadow: 0 2px 2px #000;
-  font-family: 'Rokkitt', serif; }
+  font-size: 20px;
+  text-shadow: 0 2px 2px #000; }
 
+/* ==========
+
+  Post page
+
+========== */
+.post-container {
+  padding: 15px 25px;
+  font-size: 24px;
+  line-height: 1.45;
+  color: #222;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 1px #999; }
+  .post-container h2 {
+    align-self: flex-end;
+    padding: 0px 23px;
+    margin: 0;
+    color: #fff; }
+
+.post-container__heading-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  display: flex; }
+
+.hero-image {
+  height: 165px;
+  margin: -15px -25px 10px -25px;
+  display: flex; }
+
+.side-archive-container {
+  padding: 0 12px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 1px #999;
+  flex-grow: 0;
+  flex: 1; }
+
+.side-archive-container__heading {
+  color: #222; }
+
+/* ==========
+
+  Footer
+
+========== */
 footer {
   background-color: #3b3148;
   color: #fff;
-  font-family: 'Rokkitt', serif;
   font-size: 18px;
   padding: 8px 18px;
   position: fixed;
@@ -367,6 +417,11 @@ footer {
   footer div:nth-child(even) {
     text-align: right; }
 
+/* ==========
+
+    Media queries
+
+========== */
 @media only screen and (max-width: 40.063em) {
   .home-container {
     margin: 0;
@@ -378,7 +433,8 @@ footer {
 
   .home-container__col-1 {
     width: 100%;
-    margin: 0; }
+    margin: 0;
+    padding: 8px; }
 
   .home-container__col-1--text {
     padding: 15px 32px; }
@@ -400,7 +456,17 @@ footer {
     background-size: 110%;
     background-position: -10%; }
 
+  .designs-container {
+    flex-direction: column; }
+
+  .designs-container--process {
+    margin: 0; }
+
   footer {
     position: inherit;
     text-align: center !important;
-    flex-direction: column; } }
+    flex-direction: column;
+    font-size: 14px; }
+
+  footer div:nth-child(even) {
+    text-align: center; } }
