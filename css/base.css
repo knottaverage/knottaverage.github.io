@@ -457,6 +457,9 @@ footer {
     background-size: 110%;
     background-position: -10%; }
 
+  .post-container h2 {
+    font-size: 28px; }
+
   .designs-container {
     flex-direction: column; }
 
