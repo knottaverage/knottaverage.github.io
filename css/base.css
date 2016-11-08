@@ -322,8 +322,7 @@ input[type=checkbox] {
   margin-right: 18px;
   color: #333; }
   .home-links-container a span img {
-    width: 21px;
-    margin-right: 2px; }
+    margin-right: 5px; }
   .home-links-container a:hover {
     text-decoration: underline; }
 
@@ -409,10 +408,10 @@ footer {
   color: #fff;
   font-size: 18px;
   padding: 8px 18px;
-  position: fixed;
   bottom: 0;
   width: 100%;
   display: flex;
+  position: fixed;
   border-top: solid 1px #D2A125; }
   footer div {
     flex: 1; }
@@ -468,7 +467,7 @@ footer {
     position: inherit;
     text-align: center !important;
     flex-direction: column;
-    font-size: 14px; }
+    font-size: 13px; }
 
   footer div:nth-child(even) {
     text-align: center; } }

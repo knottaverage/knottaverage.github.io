@@ -37,15 +37,15 @@ input:focus {
         position: relative;
     }
     @media only screen and (max-width: 40.063em) {
-        flex-flow: column;      
+        flex-flow: column;
     }
     @media only screen and (max-width: 40.063em) {
         .col-1 {
             order: 2;
-        }  
+        }
         .col-2 {
             order: 1;
-        } 
+        }
     }
 }
 
@@ -55,7 +55,7 @@ input:focus {
     position: absolute;
     right: 0;
     width: 65%;
-    padding-top: 19px;
+    padding-top: 37px;
     p {
         padding: 0;
         margin: 0;
@@ -86,11 +86,11 @@ input:focus {
     width: 100%;
     .flex-day,
     .flex-event {
-        -webkit-box-flex: 1;
-        -webkit-flex: 1;
-        -moz-box-flex: 1;
-        ms-flex: 1;
-        flex: 1;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -moz-box-flex: 1;
+      ms-flex: 1;
+      flex: 1;
     }
 }
 .flex-day {
@@ -140,7 +140,7 @@ span.month-checkout {
     span {
         display: block;
         text-transform: uppercase;
-        color: #333;   
+        color: #333;
     }
     .event-name {
         font-weight: 700;
@@ -195,7 +195,7 @@ span.month-checkout {
         position: relative;
         margin: 3px;
         &:hover {
-            cursor: pointer; 
+            cursor: pointer;
         }
         &:active {
             color: #fff;
@@ -239,7 +239,7 @@ span.month-checkout {
   0% {
     transform: translate(-20px, 0);
   }
-  
+
   100% {
     transform: translate(0, 0);
   }

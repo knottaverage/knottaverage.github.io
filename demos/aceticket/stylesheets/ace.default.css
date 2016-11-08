@@ -95,6 +95,16 @@ h1 {
   font-size: 4em;
 }
 
+/* line 88, ../sass/ace.default.scss */
+.footer {
+  background: #333;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  padding: 50px 0;
+}
+
 /* ====================
 
     Tablets
