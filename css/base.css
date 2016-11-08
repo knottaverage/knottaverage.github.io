@@ -523,6 +523,9 @@ footer {
   .designs-container--process {
     margin: 0; }
 
+  .responsive {
+    display: none; }
+
   footer {
     position: inherit;
     text-align: center !important;
