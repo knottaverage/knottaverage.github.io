@@ -126,7 +126,7 @@ nav {
 
 .menu li:hover {
   background-color: #D2A125;
-  color: #fff !important; }
+  color: #fff; }
 
 /* Dropdown */
 .menu li ul {
@@ -162,10 +162,13 @@ nav {
   display: block;
   position: absolute; }
 
-.contact {
+li.contact {
   color: #b7afd0;
   font-size: 16px;
   padding: 13px !important; }
+  li.contact:hover {
+    background: transparent;
+    color: #b7afd0; }
 
 /*
   Style 'show menu' label button
