@@ -6,37 +6,49 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Designs</title>
+	<title>Design, Stephen Knott</title>
 	<meta description="Stephen Knott UI Designer / Front-end Developer
 " />
 	<link rel="stylesheet" href="/css/base.css">
 	<link rel="canonical" href="http://localhost:4000/designs/">
-	<link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rokkitt|Lato|Lora|EB+Garamond" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="/js/basic.js"></script>
 </head>
 
 
 <body>
-  <!--<aside>
-	<div class="container">
-		<nav>
-			<ul>
-				     
-				<li><a href="/code-snippets/">Snippets</a></li>
-				  
-				<li><a href="/designs/">Designs</a></li>
-				         
-				<li><a href="/blog">Blog</a></li>
-			</ul>
-		</nav>
-	</div>
-</aside>-->
+  <div class="body-container">
+    <div class="body-container__left-column">
+      <div class="logo-container">
+    		<a href="/">
+          <span class="logo-container__bold">Knottaverage's</span>
+          <span class="logo-container__subtext">pixels and pencils.</span>
+        </a>
+    	</div>
+      <nav role="navigation" class="mobile-nav">
+  <label for="show-menu" class="nav__open-button">Menu</label>
+  <input type="checkbox" id="show-menu" role="button">
+  <ul class="menu">
+		<li>
+			<div>
+				<label for="show-menu" class="show-menu close-menu">
+					<input type="checkbox" id="show-menu" role="button">
+					<div class="nav__close-button">Close</span>
+				</label>
+			</div>
+		</li>
+    <li><a href="/">Bio</a></li>
+    <li><a href="/designs/">Design</a></li>
+    <li><a href="/code-snippets/">Snippets</a></li>
+    <!--<li><a href="/notes/">Notes</a></li>-->
+    <li class="contact">
+      knottaverage[@]gmail.com<br>707-494-1384
+    </li>
+  </ul>
+</nav>
 
-<!--<header>
-	<h1><a href="">Stephen Knott</a></h1>
-</header>-->
-
+<!--
 <nav class="nav clear" role="navigation">
 	<div class="logo-container">
 		<a href="/"><span class="logo-container__bold">Knottaverage's</span> pixels and pencils.</a>
@@ -71,37 +83,154 @@
     </ul>
   </div>
 </nav>
+-->
 
-  <!-- _includes/base.html -->
-
-<!-- Boston TKD -->
-<div class="designs-container">
-  <div class="designs-container--web-image">
-    <img src="/img/aceticket-responsive-design.jpg" style="width:100%" />
-  </div>
-  <div class="designs-container--process">
-    <div class="designs-container--process__col process--text">
-      <p class="process--heading">Ace Ticket responsive design</p>
-      <p>During my time at Ace Ticket, I got to see a lot of change happen in the ticket broker industry. Electronic tickets started to become more widely accepted and encouraged at venues. This change in the industry required a more mobile friendly website, something easier to maintain while easy to view on the go. Before I was offered a new opportunity with Iora, I had begun building a new responsive redesign of the website to bring Ace Ticket up to date on new web technologies and practices.</p>
-      <p><a href="/demos/aceticket/" target="_blank">View lo-fi demo</a></p>
     </div>
+    <div class="body-container__right-column">
+      <!-- _includes/base.html -->
+
+<!-- Main content -->
+<div class="basic-container--animate">
+  <!-- Responsive Ace Ticket -->
+  <div class="basic-container">
+    <div class="basic-container__top-knot"></div>
+    <div class="basic-container__main-image">
+      <div class="basic-container__project-hero-image">
+        <img src="/img/designs/aceticket/responsive-home-screen.jpg" class="aceResponsiveHero img--full-width" />
+      </div>
+      <div class="basic-container__sub-images">
+        <ul>
+          <li>
+            <img src="/img/designs/aceticket/responsive-home-screen.jpg" class="aceSub1" />
+          </li>
+          <li>
+            <img src="/img/designs/aceticket/responsive-event-screen.jpg" class="aceSub2" />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="basic-container__project-info">
+      <p class="process--heading">Ace Ticket responsive design</p>
+      <p>During my time at Ace Ticket, I got to see a lot of change happen in the ticket broker industry. Electronic tickets started to become more widely accepted and encouraged at venues. This change in the industry required a more mobile friendly website, something easier to maintain while easy to view while out on the town.</p>
+      <p>The following demo is a spike on a responsive redesign for the website to bring Ace Ticket up to date on new web technologies and practices. Links on the demo are limited to the event page.</p>
+      <p><a href="/demos/aceticket/" target="_blank">View demo</a></p>
+    </div>
+    <div class="basic-container__bottom-knot"></div>
   </div>
-</div>
-<div class="designs-container">
-  <div class="designs-container--web-image">
-    <img src="/img/aceticket-responsive-design-event.jpg" style="width: 100%" />
+
+  <!-- 2015 Ace Ticket -->
+  <div class="basic-container">
+    <div class="basic-container__main-image">
+      <div class="basic-container__project-hero-image">
+        <img src="/img/designs/aceticket/old-home-page-with-mobile.jpg" class="aceHero img--full-width" />
+      </div>
+      <div class="basic-container__sub-images">
+        <ul>
+          <li>
+            <img src="/img/designs/aceticket/old-home-page-with-mobile.jpg" class="aceOldSub1" />
+          </li>
+          <li>
+            <img src="/img/designs/aceticket/old-event-page.jpg" class="aceOldSub2" />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="basic-container__project-info">
+      <p class="process--heading">AceTicket.com</p>
+      <p>Ace has something special about them compared to other ticket brokers not just in the Greater Boston area, but in the industry as a whole. They know Boston based events better than anyone and offer a customer service  have yet to seen be rivaled by any company with an e-commerce experience.</p>
+      <p>Watching Sales and Operations teams share their knowledge and interact with customers, I felt the site had a standard to live up to. To be an extension for the teams and make the user feel as if they got a box office treatment in the comfort of their homes.</p>
+      <p><a href="www.aceticket.com" target="_blank">View website</a></p>
+    </div>
+    <div class="basic-container__bottom-knot"></div>
   </div>
-  <div class="designs-container--process">
-    <img src="/img/aceticket-responsive-design-mobile.jpg" style="width:275px;height:460px;" />
+
+  <!-- 2015 Ace eNewsletter -->
+  <div class="basic-container">
+    <div class="basic-container__main-image">
+      <div class="basic-container__project-hero-image--solo">
+        <img src="/img/designs/aceticket/ace-email-campaign.jpg" />
+      </div>
+      <div class="basic-container__sub-images">
+        <ul>
+          <li>
+          </li>
+          <li>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="basic-container__project-info">
+      <p class="process--heading">Ace Ticket eNewsletter</p>
+      <p>One of the biggest challenges I faced during my time at Ace was building a responsive email template at a time in 2012 when not many companies were, especially the competition . So many email clients to target, so many options for failure. Testing was a nightmare, but I felt like the underdog rising to the challenge every time I made a fix for Outlook just to break Gmail.</p>
+      <p>A year later of iterations, extensive research with a dash of Email on Acid’s testing software, I was finally able to put together an elegant responsive email template that felt natural on all devices.</p>
+    </div>
+    <div class="basic-container__bottom-knot"></div>
   </div>
-</div>
-<!-- Boston TKD -->
-<div class="designs-container">
-  <div class="designs-container--web-image">
-    <img src="/img/btkd-desktop.jpg" style="width:100%" />
+
+  <!-- 2015 Ace Blog -->
+  <div class="basic-container">
+    <div class="basic-container__main-image">
+      <div class="basic-container__project-hero-image--solo">
+        <img src="/img/designs/aceticket/ace-ticket-blog.jpg" />
+      </div>
+      <div class="basic-container__sub-images">
+        <ul>
+          <li>
+          </li>
+          <li>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="basic-container__project-info">
+      <p class="process--heading">Ace Ticket Blog</p>
+      <p>We build blogs for content, to help consume knowledge or to listen and help build opinions. Ace Ticket’s blog design was centered around two key factors. The first being on target with Ace’s online branding, the second was for the mass amount of traffic trying to learn more about Fenway park.</p>
+      <p>Ace’s venue knowledge is extensive. But it is staggering to to see the amount of unique visitors searching for key terms like “Fenway seating” or “obstructed views”. Ace’s blog was another research tool used by dedicated fans looking for the best deal on a pair of Field Box seats near the Green Monster.</p>
+    </div>
+    <div class="basic-container__bottom-knot"></div>
   </div>
-  <div class="designs-container--process">
-    <div class="designs-container--process__col process--text">
+
+  <!-- 2015 Ace Embrace -->
+  <div class="basic-container">
+    <div class="basic-container__main-image">
+      <div class="basic-container__project-hero-image">
+        <img src="/img/designs/aceticket/ace-embrace-website.jpg" class="embraceHero img--full-width" />
+      </div>
+      <div class="basic-container__sub-images">
+        <ul>
+          <li>
+            <img src="/img/designs/aceticket/ace-embrace-logo.jpg" class="embraceSub1" />
+          </li>
+          <li>
+            <img src="/img/designs/aceticket/ace-embrace-website.jpg" class="embraceSub2" />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="basic-container__project-info">
+      <p class="process--heading">Ace Embrace</p>
+      <p>Ace Embrace’s logo is probably one of my favorite designs to date. So when it came time to create the charity's web presence I wanted a different type of feeling compared to Ace’s usual design treatment of sporty and fast.</p>
+      <p>I wanted Ace Embrace to slow down, create a warmer environment, evoking the feeling of your first game as a child, the thrill of seeing the players in action for that first time. Still while using brand colors of course. It was important to represent the many children’s charities Ace donated to so, Ace understands that feeling, they understand how going to an event can help guide the path our future generation.</p>
+    </div>
+    <div class="basic-container__bottom-knot"></div>
+  </div>
+
+  <!-- 2015 Boston TKD -->
+  <div class="basic-container">
+    <div class="basic-container__main-image">
+      <div class="basic-container__project-hero-image--solo">
+        <img src="/img/designs/bostontkd/bostontkd-home-page.jpg" />
+      </div>
+      <div class="basic-container__sub-images">
+        <ul>
+          <li>
+          </li>
+          <li>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="basic-container__project-info">
       <p class="process--heading">Boston Tae Kwon Do Academy</p>
       <p>Boston TKD offers an incredible service to their community. Helping teach students of all ages discipline, leadership and respect through the martial arts.</p>
       <p>When it came time to update their website they wanted a responsive website that had a friendly look geared towards family. They wanted to showcase a new look that anyone can learn self-defense.</p>
@@ -109,78 +238,89 @@
         <a href="http://www.bostontkdfitness.com" target="blank">Visit bostontkdfitness.com</a><br />
       </p>
     </div>
+    <div class="basic-container__bottom-knot"></div>
   </div>
-</div>
-<!-- Snowfan -->
-<div class="designs-container">
-  <div class="designs-container--main-image">
-    <div class="css-tricker__loader responsive">
-      <iframe height="637" scrolling="no" title="Snowfan" src="//codepen.io/knottaverage/embed/VKojbm/?height=637&amp;theme-id=light&amp;default-tab=result&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="http://codepen.io/knottaverage/pen/VKojbm/">Snowfan</a> by Steve Knott (<a href="http://codepen.io/knottaverage">@knottaverage</a>) on <a href="http://codepen.io">CodePen</a>.
-      </iframe>
-    </div>
-    <div>
-      <img src="/img/snowfan-newsletter.jpg" style="width: 100%" />
-    </div>
-  </div>
-  <div class="designs-container--process">
-    <div class="designs-container--process__col process--text">
-      <!-- Name -->
-      <p class="process--heading">Ace Ticket drawings and illustrations</p>
-      <p>Often designs in the ticket broker industry are pretty cut and dry: insert a sports or event image, copy about being a fan or part of the crowd, name of the broker, and, if you're lucky to use it, the logo of a popular Boston sports team to bring it all home.</p>
-      <p>It makes sense, but when everyone else is doing it, the only thing really setting these brokers apart is the cost of the seat they are trying to sell.</p>
-      <p>So when the holidays came rolling around, I felt it was time to try something different, something more light and fun and with touch of familiarity, which gave me the idea to create "Jimmy the Snowfan", "New Year’s Jimmy", "Lovebirds", along with many others ideas.</p>
-    </div>
-    <div class="designs-container--process__col">
-      <!-- Screenshot 1 -->
-      <img src="/img/new-year-jimmy.jpg" />
-    </div>
-    <div class="designs-container--process__col">
-      <!-- Screenshots 2 -->
-      <div class="designs-container--row">
-        <div>
-          <img src="/img/snowfan-sketch.jpg" />
-        </div>
-        <div>
-          <img src="/img/jimmy-new-year-sketch.jpg" />
-        </div>
+
+  <!-- Firestorm -->
+  <div class="basic-container">
+    <div class="basic-container__main-image">
+      <div class="basic-container__project-hero-image--solo">
+        <img src="/img/designs/firestormgraphix/homepage.jpg" />
       </div>
-      <div class="designs-container--row">
-        <div>
-          <img src="/img/lovebirds.jpg" />
-        </div>
-        <div>
-          <img src="/img/little-fan.jpg" />
-        </div>
+      <div class="basic-container__sub-images">
+        <ul>
+          <li>
+          </li>
+          <li>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="designs-container--process__col">
-      <!-- Screenshot 3 -->
+    <div class="basic-container__project-info">
+      <p class="process--heading">Firestorm Graphix</p>
+      <p>Fast, energetic, these qualities are sought out when racers look for their decals. Firestorm Graphix wanted that speedy look,  and with a vast catalog of products, keeping the navigation clear was very important during the design process.</p>
+      <p>With so many products being offered Firestorm didn’t want to hide their navigation in a dropdown menu. Customers would come to the ecommerce site with an agenda, rarely ever browsing. So keeping the full navigation open and persistent from page to page became a design choice later down the road.</p>
+      <p>
+        <a href="http://www.firestormgraphix.com" target="blank">Visit Firestormgraphix.com</a><br />
+      </p>
+    </div>
+    <div class="basic-container__bottom-knot"></div>
+  </div>
+
+  <!-- Ace Drawings -->
+  <div class="basic-container">
+    <div class="designs-container">
+      <div class="designs-container--main-image">
+        <div class="css-tricker__loader responsive">
+          <iframe height="637" scrolling="no" title="Snowfan" src="//codepen.io/knottaverage/embed/VKojbm/?height=637&amp;theme-id=light&amp;default-tab=result&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="http://codepen.io/knottaverage/pen/VKojbm/">Snowfan</a> by Steve Knott (<a href="http://codepen.io/knottaverage">@knottaverage</a>) on <a href="http://codepen.io">CodePen</a>.
+          </iframe>
+        </div>
+        <div>
+          <img src="/img/snowfan-newsletter.jpg" style="width: 100%" />
+        </div>
+      </div>
+      <div class="designs-container--process">
+        <div class="designs-container--process__col process--text">
+          <!-- Name -->
+          <p class="process--heading">Ace Ticket drawings and illustrations</p>
+          <p>Often designs in the ticket broker industry are pretty cut and dry: insert a sports or event image, copy about being a fan or part of the crowd, name of the broker, and, if you're lucky to use it, the logo of a popular Boston sports team to bring it all home.</p>
+          <p>It makes sense, but when everyone else is doing it, the only thing really setting these brokers apart is the cost of the seat they are trying to sell.</p>
+          <p>So when the holidays came rolling around, I felt it was time to try something different, something more light and fun and with touch of familiarity, which gave me the idea to create "Jimmy the Snowfan", "New Year’s Jimmy", "Lovebirds", along with many others ideas.</p>
+        </div>
+        <div class="designs-container--process__col">
+          <!-- Screenshot 1 -->
+          <img src="/img/new-year-jimmy.jpg" />
+        </div>
+        <div class="designs-container--process__col">
+          <!-- Screenshots 2 -->
+          <div class="designs-container--row">
+            <div>
+              <img src="/img/snowfan-sketch.jpg" />
+            </div>
+            <div>
+              <img src="/img/jimmy-new-year-sketch.jpg" />
+            </div>
+          </div>
+          <div class="designs-container--row">
+            <div>
+              <img src="/img/lovebirds.jpg" />
+            </div>
+            <div>
+              <img src="/img/little-fan.jpg" />
+            </div>
+          </div>
+        </div>
+        <div class="designs-container--process__col">
+          <!-- Screenshot 3 -->
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-  <footer>
-  <div>
-    Coded by Stephen Knott, built with Jekyll and hosted on Github.
+      <div class="test-body-size"></div>
+    </div>
   </div>
-  <div>
-    knottaverage[@]gmail.com [707] 494-1384
-  </div>
-  <!--This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-  You can find the source code for the Jekyll new theme at:
-  <a href="https://github.com/jekyll"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
-</span><span class="username">jekyll</span></a>
- /
-  [minima](https://github.com/jekyll/minima)
-
-  You can find the source code for Jekyll at
-  <a href="https://github.com/jekyll"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
-</span><span class="username">jekyll</span></a>
- /
-  [jekyll](https://github.com/jekyll/jekyll)-->
-</footer>
-
 </body>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
