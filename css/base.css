@@ -35,9 +35,6 @@ body {
 a {
   text-decoration: none; }
 
-p {
-  font-family: 'EB Garamond', serif; }
-
 /*
   Body Container
 */
@@ -112,25 +109,26 @@ nav {
   .logo-container__bold,
   .logo-container__subtext {
     font-size: 20px;
-    letter-spacing: 0; } }
+    letter-spacing: 0;
+    display: block; } }
 /* ==========
 
-  Start Navigation
+  Start Desktop Navigation
 
 ========== */
 .menu {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  font-size: 24px;
-  text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  list-style-type: none;
+  margin: 0 0 10px 0;
+  padding: 0;
+  text-align: left; }
 
 .menu li {
   display: inline-block;
@@ -148,6 +146,9 @@ nav {
 .menu li:hover {
   background-color: #D2A125;
   color: #fff; }
+
+.menu li a.active {
+  background-color: #3f2e56; }
 
 /* Dropdown */
 .menu li ul {
@@ -183,13 +184,67 @@ nav {
   display: block;
   position: absolute; }
 
-li.contact {
+.contact {
   color: #b7afd0;
   font-size: 16px;
-  padding: 13px !important; }
-  li.contact:hover {
+  padding: 14px !important;
+  text-align: left; }
+  .contact:hover {
     background: transparent;
     color: #b7afd0; }
+
+.subnav {
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  padding: 8px 3px 3px;
+  border-top: solid 1px #705792;
+  border-bottom: solid 1px #705792; }
+  .subnav a {
+    color: #fff; }
+
+.subnav__icon {
+  display: inline-block;
+  padding: 8px 12px; }
+  .subnav__icon .linkedin {
+    width: 24px; }
+
+.tooltip {
+  position: relative;
+  display: inline-block; }
+
+.tooltip .tooltiptext {
+  background-color: #D2A125;
+  border-radius: 4px;
+  color: #fff;
+  padding: 5px 0;
+  text-align: center;
+  visibility: hidden;
+  width: 120px;
+  /* Position the tooltip */
+  box-shadow: 0 1px 1px #000;
+  font-size: 18px;
+  left: 0;
+  position: absolute;
+  z-index: 1; }
+
+.tooltiptext:before {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid #D2A125;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  content: "";
+  left: 15px;
+  top: -12px;
+  position: absolute; }
+
+.tooltip:hover .tooltiptext {
+  visibility: visible; }
 
 /*
   Style 'show menu' label button
@@ -215,12 +270,17 @@ input[type=checkbox] {
   -o-transition: all 0.8s;
   transition: all 0.8s; }
 
-/*
-  Mobile nav
-*/
-@media screen and (max-width: 480px) {
+/* ==========
+
+  Start Mobile Navigation
+
+========== */
+@media only screen and (max-width: 40.063em) {
   nav {
     font-size: 20px; }
+
+  .subnav {
+    display: none; }
 
   input[type=checkbox]:checked ~ .menu {
     display: block;
@@ -232,8 +292,7 @@ input[type=checkbox] {
     -ms-transition: all 0.8s;
     -o-transition: all 0.8s;
     transition: all 0.8s;
-    background: rgba(78, 58, 105, 0.98);
-    box-shadow: inset 1px 1px 30px #342646;
+    background: rgba(78, 58, 105, 0.99);
     display: none;
     height: 100%;
     position: fixed;
@@ -247,7 +306,13 @@ input[type=checkbox] {
     margin: auto; }
 
   .contact {
-    font-size: 28px !important; }
+    font-size: 24px !important;
+    position: fixed;
+    bottom: 25%;
+    width: 100%;
+    left: 0;
+    z-index: 101;
+    text-align: center; }
 
   .menu li:nth-child(2) {
     margin-top: 20px; }
@@ -277,12 +342,15 @@ input[type=checkbox] {
   .menu li a:hover {
     border-radius: 0 !important; }
 
-  .menu li a:active {
-    background-color: #d00 !important; }
+  .menu li a:active,
+  .menu li a.active {
+    background-color: #3f2e56; }
 
   .nav__open-button {
-    padding: 18px 10px;
-    display: inline-block; }
+    display: inline-block;
+    color: #fff;
+    height: 70px;
+    line-height: 75px; }
 
   .nav__close-button {
     font-size: 20px; }
@@ -291,7 +359,7 @@ input[type=checkbox] {
     display: block;
     color: #fff;
     text-align: right;
-    padding: 18px 10px; }
+    padding: 24px 10px; }
 
   .menu-position {
     position: absolute;
@@ -342,6 +410,9 @@ input[type=checkbox] {
   box-shadow: 0 0 1px #999;
   position: relative;
   min-height: 400px; }
+
+.basic-container__heading {
+  display: none; }
 
 .basic-container--animate {
   -webkit-animation: swing 3s ease-in-out;
@@ -403,17 +474,22 @@ input[type=checkbox] {
 
 .basic-container__project-info {
   font-size: 20px;
-  width: 50%;
-  margin: 45px 0  50px 45px; }
+  color: #1b1523;
+  font-family: 'Rokkitt', serif;
+  line-height: 24px;
+  margin: 45px 0 50px 45px;
+  width: 70%; }
   .basic-container__project-info a {
-    color: #4E3A69;
+    color: #4e3a69;
     padding: 8px;
     margin-left: -8px;
-    border-radius: 8px;
-    cursor: pointer; }
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: underline; }
     .basic-container__project-info a:hover {
       color: #fff;
-      background: #D2A125; }
+      background: #D2A125;
+      text-decoration: none; }
 
 .basic-container__project-hero-image img,
 .basic-container__project-hero-image--solo img {
@@ -437,15 +513,15 @@ input[type=checkbox] {
     position: absolute;
     right: 0;
     width: 65px;
-    height: 53px;
+    height: 70px;
     top: -2px; }
-
-  .nav__open-button {
-    color: #fff; }
 
   .basic-container {
     margin: 4px 4px 8px 4px;
     padding: 12px; }
+
+  .basic-container__heading {
+    display: block; }
 
   .basic-container--animate {
     -webkit-animation: none;
@@ -489,7 +565,10 @@ input[type=checkbox] {
     color: inherit;
     background-color: transparent;
     box-shadow: none;
-    flex-grow: 0; } }
+    flex-grow: 0; }
+
+  .basic-container__snippet {
+    width: 100%; } }
 /* ==========
 
   Snowman Designs Layout
@@ -547,10 +626,11 @@ input[type=checkbox] {
 .img--full-width {
   width: 100%; }
 
-.process--heading {
-  font-weight: 600;
-  font-size: 24px;
-  color: #666; }
+.basic-container__project-heading {
+  font-weight: 400;
+  font-size: 28px;
+  color: #909090;
+  display: block; }
 
 /* ==========
 
@@ -573,13 +653,6 @@ input[type=checkbox] {
   font-size: 38px;
   color: #222; }
 
-.home-links-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 24px;
-  margin-bottom: 18px; }
-
 .home-container:last-of-type {
   margin-bottom: 100px; }
 
@@ -596,11 +669,13 @@ input[type=checkbox] {
 
 .home-text {
   font-size: 20px;
-  color: #222; }
+  color: #222;
+  line-height: 24px;
+  font-family: 'Rokkitt', serif; }
 
 .home-container__text {
-  width: 60%;
-  margin-top: 80px; }
+  width: 70%;
+  margin-top: 60px; }
 
 @media only screen and (max-width: 40.063em) {
   .home-text {
@@ -618,33 +693,13 @@ input[type=checkbox] {
   Post page
 
 ========== */
-.main-post-col {
-  margin-bottom: 20px; }
-
 .post-container {
-  width: 950px;
-  margin: 20px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  padding: 0; }
 
 .post-container__content {
-  background-color: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 0 1px #999;
-  color: #222;
   font-size: 24px;
-  line-height: 1.45;
-  padding: 15px 25px;
-  margin-bottom: 20px; }
-  .post-container__content h2 {
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-    padding: 0px 23px;
-    margin: 0;
-    color: #fff;
-    font-size: 54px;
-    line-height: 0.85; }
+  width: 55%;
+  margin: 45px 0 50px 55px; }
 
 .post-container__heading-overlay {
   background-color: rgba(0, 0, 0, 0.8);

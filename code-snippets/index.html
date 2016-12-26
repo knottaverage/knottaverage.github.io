@@ -11,8 +11,7 @@
 " />
 	<link rel="stylesheet" href="/css/base.css">
 	<link rel="canonical" href="http://localhost:4000/code-snippets/">
-	<link href="https://fonts.googleapis.com/css?family=Rokkitt|Lato|Lora|EB+Garamond" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Rokkitt|Ubuntu" rel="stylesheet">	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="/js/basic.js"></script>
 </head>
 
@@ -38,13 +37,39 @@
 				</label>
 			</div>
 		</li>
-    <li><a href="/">Bio</a></li>
-    <li><a href="/designs/">Design</a></li>
-    <li><a href="/code-snippets/">Snippets</a></li>
+    <li><a href="/" >Bio</a></li>
+    <li><a href="/designs/" >Design</a></li>
+    <li><a href="/code-snippets/" class="active">Snippets</a></li>
     <!--<li><a href="/notes/">Notes</a></li>-->
-    <li class="contact">
-      knottaverage[@]gmail.com<br>707-494-1384
-    </li>
+    <div class="subnav">
+      <a href="https://www.linkedin.com/in/knottaverage" target="_blank">
+        <span class="subnav__icon tooltip">
+          <img src="/img/linkedin.svg" alt="LinkedIn" class="linkedin" />
+          <span class="tooltiptext">LinkedIn</span>
+        </span>
+      </a>
+      <a href="https://github.com/knottaverage" target="_blank">
+        <span class="subnav__icon tooltip">
+          <img src="/img/github.svg" alt="Github" />
+          <span class="tooltiptext">Github</span>
+        </span>
+      </a>
+      <a href="http://codepen.io/knottaverage/" target="_blank">
+        <span class="subnav__icon tooltip">
+          <img src="/img/codepen.svg" alt="Codepen" />
+          <span class="tooltiptext">Codepen</span>
+        </span>
+      </a>
+      <a href="http://www.knottaverage.com/downloads/StephenKnottUIDesignResume.pdf" target="_blank">
+        <span class="subnav__icon tooltip">
+          <img src="/img/document-icon.svg" alt="Resume" />
+          <span class="tooltiptext">Resume</span>
+        </span>
+      </a>
+    </div>
+    <div class="contact">
+      knottaverage[@]gmail.com
+    </div>
   </ul>
 </nav>
 
@@ -87,12 +112,13 @@
 
     </div>
     <div class="body-container__right-column">
-      <div class="basic-container--animate">
+      <div class="">
   <!-- Button animations -->
   <div class="basic-container">
+  <h1 class="basic-container__heading">Snippets</h1>
     <div class="basic-container__top-knot"></div>
     <div class="basic-container__snippet">
-      <div class="basic-container__project-hero-image">
+      <div class="basic-container__codepen">
         <div class="css-tricker__loader">
           <iframe height="397" scrolling="no" title="Various button animations" src="//codepen.io/knottaverage/embed/KgOzeZ/?height=397&amp;theme-id=light&amp;default-tab=result&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/knottaverage/pen/KgOzeZ/">Various button animations</a> by Steve Knott (<a href="http://codepen.io/knottaverage">@knottaverage</a>) on <a href="http://codepen.io">CodePen</a>.
           </iframe>
@@ -101,12 +127,8 @@
     </div>
     <div class="basic-container__project-info">
       <p class="process--heading">Button animations</p>
-      <p>Various button animations for everyday use. Each button is an experiment in a different code base. Each button is a spike on seeing how the animation would react on different devices.</p>
-      <ul class="tag-container">
-        <li class="tag">Angular</li>
-        <li class="tag">CSS animation</li>
-        <li class="tag">D3</li>
-      </ul>
+      <p>Various button animations for everyday use. Each button is an experiment in a different code base and a spike on seeing how the animation would react on different devices.</p>
+      <p>Built with Angular, CSS Animation, and a little bit of D3.</p>
     </div>
     <div class="basic-container__bottom-knot"></div>
   </div>
@@ -114,7 +136,7 @@
   <div class="basic-container">
     <div class="basic-container__top-knot"></div>
     <div class="basic-container__snippet">
-      <div class="basic-container__project-hero-image">
+      <div class="basic-container__codepen">
         <div class="css-tricker__loader">
           <iframe height="559" scrolling="no" title="Trust Pilot review feed" src="//codepen.io/knottaverage/embed/NRQNoa/?height=559&amp;theme-id=light&amp;default-tab=result&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/knottaverage/pen/NRQNoa/">Trust Pilot review feed</a> by Steve Knott (<a href="http://codepen.io/knottaverage">@knottaverage</a>) on <a href="http://codepen.io">CodePen</a>.
           </iframe>
@@ -123,11 +145,8 @@
     </div>
     <div class="basic-container__project-info">
       <p class="process--heading">Trust Pilot feed</p>
-      <p>A prototype for the Trust pilot review feed for Ace ticket. Using Trust Pilots api I wanted to run a spike and see what it would take to build a more custom look to the feed instead of using one of their stock layouts.</p>
-      <ul class="tag-container">
-        <li class="tag">Angular</li>
-        <li class="tag">CSS</li>
-      </ul>
+      <p>A prototype for the Trust pilot review feed for Ace ticket. Using Trust Pilots api I wanted to run a spike and see what it would take to build a custom and responsive look to the feed instead of using one of their stock layouts.</p>
+      <p>Built with Angular and CSS.</p>
     </div>
     <div class="basic-container__bottom-knot"></div>
   </div>
@@ -135,7 +154,7 @@
   <div class="basic-container">
     <div class="basic-container__top-knot"></div>
     <div class="basic-container__snippet">
-      <div class="basic-container__project-hero-image">
+      <div class="basic-container__codepen">
         <div class="css-tricker__loader">
           <iframe height="605" scrolling="no" title="Fenway park map demo" src="//codepen.io/knottaverage/embed/zKgjpw/?height=605&amp;theme-id=light&amp;default-tab=result&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/knottaverage/pen/zKgjpw/">Fenway park map demo</a> by Steve Knott (<a href="http://codepen.io/knottaverage">@knottaverage</a>) on <a href="http://codepen.io">CodePen</a>.
           </iframe>
@@ -144,13 +163,9 @@
     </div>
     <div class="basic-container__project-info">
       <p class="process--heading">Fenway park seating map</p>
-      <p>For a long time the ticket broker industry was stuck on Flash seating maps, no one was offering a better product. I felt the time was right and the technologies was there so I built this seating map as a prototype to show what could be accomplished using SVG. My greatest accomplishment with this prototype was that it worked in IE7.</p>
-      <ul class="tag-container">
-        <li class="tag">Raphael.js</li>
-        <li class="tag">jQuery UI</li>
-        <li class="tag">SVG</li>
-        <li class="tag">CSS</li>
-      </ul>
+      <p>For a long time the ticket broker industry depended on Flash seating maps, no one was offering a better product. I felt the time was perfect and the technologies were there so I took it upon myself to build a vector seating map as a prototype to show what we could accomplish using SVG and the possibility of a better responsive experience. My greatest accomplishment with this prototype was that it worked in lower grade browsers like Ie7.</p>
+
+      <p>Built with Raphael.js, jQuery, SVGs, and CSS.</p>
     </div>
   </div>
 </div>

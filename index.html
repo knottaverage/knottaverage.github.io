@@ -11,8 +11,7 @@
 " />
 	<link rel="stylesheet" href="/css/base.css">
 	<link rel="canonical" href="http://localhost:4000/">
-	<link href="https://fonts.googleapis.com/css?family=Rokkitt|Lato|Lora|EB+Garamond" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Rokkitt|Ubuntu" rel="stylesheet">	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="/js/basic.js"></script>
 </head>
 
@@ -38,13 +37,39 @@
 				</label>
 			</div>
 		</li>
-    <li><a href="/">Bio</a></li>
-    <li><a href="/designs/">Design</a></li>
-    <li><a href="/code-snippets/">Snippets</a></li>
+    <li><a href="/" class="active">Bio</a></li>
+    <li><a href="/designs/" >Design</a></li>
+    <li><a href="/code-snippets/" >Snippets</a></li>
     <!--<li><a href="/notes/">Notes</a></li>-->
-    <li class="contact">
-      knottaverage[@]gmail.com<br>707-494-1384
-    </li>
+    <div class="subnav">
+      <a href="https://www.linkedin.com/in/knottaverage" target="_blank">
+        <span class="subnav__icon tooltip">
+          <img src="/img/linkedin.svg" alt="LinkedIn" class="linkedin" />
+          <span class="tooltiptext">LinkedIn</span>
+        </span>
+      </a>
+      <a href="https://github.com/knottaverage" target="_blank">
+        <span class="subnav__icon tooltip">
+          <img src="/img/github.svg" alt="Github" />
+          <span class="tooltiptext">Github</span>
+        </span>
+      </a>
+      <a href="http://codepen.io/knottaverage/" target="_blank">
+        <span class="subnav__icon tooltip">
+          <img src="/img/codepen.svg" alt="Codepen" />
+          <span class="tooltiptext">Codepen</span>
+        </span>
+      </a>
+      <a href="http://www.knottaverage.com/downloads/StephenKnottUIDesignResume.pdf" target="_blank">
+        <span class="subnav__icon tooltip">
+          <img src="/img/document-icon.svg" alt="Resume" />
+          <span class="tooltiptext">Resume</span>
+        </span>
+      </a>
+    </div>
+    <div class="contact">
+      knottaverage[@]gmail.com
+    </div>
   </ul>
 </nav>
 
@@ -87,38 +112,18 @@
 
     </div>
     <div class="body-container__right-column">
-      <div class="basic-container--animate">
-
+      <div class="">
   <div class="basic-container">
+    <h1 class="basic-container__heading">Bio</h1>
     <div class="basic-container__top-knot"></div>
     <div class="home-container__col-1--text">
-      <p>
+      <p style="margin-bottom: 6px;">
         Hello, my name is Stephen Knott<br />
-        I am creator, a tinker, and a designer.<br />
-        <span style="font-size: 24px; font-style: italic;">
-          I also have an unhealthy obsession with serif fonts.
-        </span>
       </p>
-      <div class="home-links-container">
-        <a href="https://www.linkedin.com/in/knottaverage" target="_blank">
-          <span><img src="/img/linkedin.svg" /></span>
-          <span>LinkedIn</span>
-        </a>
-        <a href="https://github.com/knottaverage" target="_blank">
-          <span><img src="/img/github.svg" /></span>
-          <span>Github</span>
-        </a>
-        <a href="http://codepen.io/knottaverage/" target="_blank">
-          <span><img src="/img/codepen.svg" /></span>
-          <span>Codepen</span>
-        </a>  
-        <a href="http://www.knottaverage.com/downloads/StephenKnottUIDesignResume.pdf" target="_blank">
-          <span><img src="/img/document-icon.svg" /></span>
-          <span>Resume</span>
-        </a>
+      <div style="font-size: 24px; font-style: italic; line-height:24px; color: #666;">
+        I'm a user interaction designer with an obsession for serif fonts.
       </div>
       <div class="home-container__text">
-        <p class="process--heading">A little about me.</p>
         <p class="home-text">I love to create. I mean we all do, right? Creation is human instinct so when our curiosity takes hold, we are driven to discover all that we can. My curiosity drives me to build and tinker with web technologies.</p>
       </div>
     </div>

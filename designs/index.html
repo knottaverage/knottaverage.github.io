@@ -11,8 +11,7 @@
 " />
 	<link rel="stylesheet" href="/css/base.css">
 	<link rel="canonical" href="http://localhost:4000/designs/">
-	<link href="https://fonts.googleapis.com/css?family=Rokkitt|Lato|Lora|EB+Garamond" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Rokkitt|Ubuntu" rel="stylesheet">	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="/js/basic.js"></script>
 </head>
 
@@ -38,13 +37,39 @@
 				</label>
 			</div>
 		</li>
-    <li><a href="/">Bio</a></li>
-    <li><a href="/designs/">Design</a></li>
-    <li><a href="/code-snippets/">Snippets</a></li>
+    <li><a href="/" >Bio</a></li>
+    <li><a href="/designs/" class="active">Design</a></li>
+    <li><a href="/code-snippets/" >Snippets</a></li>
     <!--<li><a href="/notes/">Notes</a></li>-->
-    <li class="contact">
-      knottaverage[@]gmail.com<br>707-494-1384
-    </li>
+    <div class="subnav">
+      <a href="https://www.linkedin.com/in/knottaverage" target="_blank">
+        <span class="subnav__icon tooltip">
+          <img src="/img/linkedin.svg" alt="LinkedIn" class="linkedin" />
+          <span class="tooltiptext">LinkedIn</span>
+        </span>
+      </a>
+      <a href="https://github.com/knottaverage" target="_blank">
+        <span class="subnav__icon tooltip">
+          <img src="/img/github.svg" alt="Github" />
+          <span class="tooltiptext">Github</span>
+        </span>
+      </a>
+      <a href="http://codepen.io/knottaverage/" target="_blank">
+        <span class="subnav__icon tooltip">
+          <img src="/img/codepen.svg" alt="Codepen" />
+          <span class="tooltiptext">Codepen</span>
+        </span>
+      </a>
+      <a href="http://www.knottaverage.com/downloads/StephenKnottUIDesignResume.pdf" target="_blank">
+        <span class="subnav__icon tooltip">
+          <img src="/img/document-icon.svg" alt="Resume" />
+          <span class="tooltiptext">Resume</span>
+        </span>
+      </a>
+    </div>
+    <div class="contact">
+      knottaverage[@]gmail.com
+    </div>
   </ul>
 </nav>
 
@@ -90,9 +115,10 @@
       <!-- _includes/base.html -->
 
 <!-- Main content -->
-<div class="basic-container--animate">
+<div class="">
   <!-- Responsive Ace Ticket -->
   <div class="basic-container">
+    <h1 class="basic-container__heading">Design</h1>
     <div class="basic-container__top-knot"></div>
     <div class="basic-container__main-image">
       <div class="basic-container__project-hero-image">
@@ -110,10 +136,35 @@
       </div>
     </div>
     <div class="basic-container__project-info">
-      <p class="process--heading">Ace Ticket responsive design</p>
-      <p>During my time at Ace Ticket, I got to see a lot of change happen in the ticket broker industry. Electronic tickets started to become more widely accepted and encouraged at venues. This change in the industry required a more mobile friendly website, something easier to maintain while easy to view while out on the town.</p>
-      <p>The following demo is a spike on a responsive redesign for the website to bring Ace Ticket up to date on new web technologies and practices. Links on the demo are limited to the event page.</p>
+      <h3 class="basic-container__project-heading">Ace Ticket responsive design</h3>
+      <p>During my time at Ace Ticket, I got to see shifts happen in the ticket broker industry. Electronic tickets started to become accepted and encouraged at venues. This change in the industry required Ace to have a mobile friendly website, something easier to maintain while easy to view while out on the town.</p>
+
+      <p>The following demo is a responsive redesign spike for Ace’s website. An attempt to work with newer web technologies and practices while constrained with 3rd party assets. Links in the demo are limited to the event page.</p>
       <p><a href="/demos/aceticket/" target="_blank">View demo</a></p>
+    </div>
+    <div class="basic-container__bottom-knot"></div>
+  </div>
+
+  <!-- Quanta Imaging -->
+  <div class="basic-container">
+    <div class="basic-container__main-image">
+      <div class="basic-container__project-hero-image--solo">
+        <img src="/img/designs/quanta-imaging/concept-under-construction.png" />
+      </div>
+      <div class="basic-container__sub-images">
+        <ul>
+          <li>
+          </li>
+          <li>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="basic-container__project-info">
+      <h3 class="basic-container__project-heading">Quanta Imaging</h3>
+      <p>A project currently under construction. After viewing other clinical imaging websites I felt most were very "brochure" typical in the art direction. A big hero image of their facility and a dash of a "Solutions" page, sometimes even having a hard time understanding what nonclinical imaging really is.</p>
+      <p>With Quanta Imaging there had to be something to set them apart, but still hold true to what they do. Copy is still being flushed out at this time, but this feels like we are on the right track.</p>
+      <p>Website coming soon.</p>
     </div>
     <div class="basic-container__bottom-knot"></div>
   </div>
@@ -136,10 +187,10 @@
       </div>
     </div>
     <div class="basic-container__project-info">
-      <p class="process--heading">AceTicket.com</p>
+      <h3 class="basic-container__project-heading">AceTicket.com</h3>
       <p>Ace has something special about them compared to other ticket brokers not just in the Greater Boston area, but in the industry as a whole. They know Boston based events better than anyone and offer a customer service  have yet to seen be rivaled by any company with an e-commerce experience.</p>
       <p>Watching Sales and Operations teams share their knowledge and interact with customers, I felt the site had a standard to live up to. To be an extension for the teams and make the user feel as if they got a box office treatment in the comfort of their homes.</p>
-      <p><a href="http://www.aceticket.com" target="_blank">View website</a></p>
+      <p><a href="http://www.aceticket.com" target="_blank">View the website</a></p>
     </div>
     <div class="basic-container__bottom-knot"></div>
   </div>
@@ -160,39 +211,38 @@
       </div>
     </div>
     <div class="basic-container__project-info">
-      <p class="process--heading">Ace Ticket eNewsletter</p>
+      <h3 class="basic-container__project-heading">Ace Ticket eNewsletter</h3>
       <p>One of the biggest challenges I faced during my time at Ace was building a responsive email template at a time in 2012 when not many companies were, especially the competition . So many email clients to target, so many options for failure. Testing was a nightmare, but I felt like the underdog rising to the challenge every time I made a fix for Outlook just to break Gmail.</p>
       <p>A year later of iterations, extensive research with a dash of Email on Acid’s testing software, I was finally able to put together an elegant responsive email template that felt natural on all devices.</p>
     </div>
     <div class="basic-container__bottom-knot"></div>
   </div>
 
-
-    <!-- 2015 Boston TKD -->
-    <div class="basic-container">
-      <div class="basic-container__main-image">
-        <div class="basic-container__project-hero-image--solo">
-          <img src="/img/designs/bostontkd/bostontkd-home-page.jpg" />
-        </div>
-        <div class="basic-container__sub-images">
-          <ul>
-            <li>
-            </li>
-            <li>
-            </li>
-          </ul>
-        </div>
+  <!-- 2015 Boston TKD -->
+  <div class="basic-container">
+    <div class="basic-container__main-image">
+      <div class="basic-container__project-hero-image--solo">
+        <img src="/img/designs/bostontkd/bostontkd-home-page.jpg" />
       </div>
-      <div class="basic-container__project-info">
-        <p class="process--heading">Boston Tae Kwon Do Academy</p>
-        <p>Boston TKD offers an incredible service to their community. Helping teach students of all ages discipline, leadership and respect through the martial arts.</p>
-        <p>When it came time to update their website they wanted a responsive website that had a friendly look geared towards family. They wanted to showcase a new look that anyone can learn self-defense.</p>
-        <p>
-          <a href="http://www.bostontkdfitness.com" target="blank">Visit bostontkdfitness.com</a><br />
-        </p>
+      <div class="basic-container__sub-images">
+        <ul>
+          <li>
+          </li>
+          <li>
+          </li>
+        </ul>
       </div>
-      <div class="basic-container__bottom-knot"></div>
     </div>
+    <div class="basic-container__project-info">
+      <h3 class="basic-container__project-heading">Boston Tae Kwon Do Academy</h3>
+      <p>Boston TKD offers an incredible service to their community. Helping teach students of all ages discipline, leadership and respect through the martial arts.</p>
+      <p>When it came time to update their website they wanted a responsive website that had a friendly look geared towards family. They wanted to showcase a new look that anyone can learn self-defense.</p>
+      <p>
+        <a href="http://www.bostontkdfitness.com" target="blank">Visit the website</a><br />
+      </p>
+    </div>
+    <div class="basic-container__bottom-knot"></div>
+  </div>
 
   <!-- 2015 Ace Blog -->
   <div class="basic-container">
@@ -210,11 +260,11 @@
       </div>
     </div>
     <div class="basic-container__project-info">
-      <p class="process--heading">Ace Ticket Blog</p>
+      <h3 class="basic-container__project-heading">Ace Ticket Blog</h3>
       <p>We build blogs for content, to help consume knowledge or to listen and help build opinions. Ace Ticket’s blog design was centered around two key factors. The first being on target with Ace’s online branding, the second was for the mass amount of traffic trying to learn more about Fenway park.</p>
       <p>Ace’s venue knowledge is extensive. But it is staggering to to see the amount of unique visitors searching for key terms like “Fenway seating” or “obstructed views”. Ace’s blog was another research tool used by dedicated fans looking for the best deal on a pair of Field Box seats near the Green Monster.</p>
       <p>
-        <a href="http://blog.aceticket.com" target="blank">Visit blog.aceticket.com</a><br />
+        <a href="http://blog.aceticket.com" target="blank">Visit the website</a><br />
       </p>
     </div>
     <div class="basic-container__bottom-knot"></div>
@@ -238,11 +288,11 @@
       </div>
     </div>
     <div class="basic-container__project-info">
-      <p class="process--heading">Ace Embrace</p>
-      <p>Ace Embrace’s logo is probably one of my favorite designs to date. So when it came time to create the charity's web presence I wanted a different type of feeling compared to Ace’s usual design treatment of sporty and fast.</p>
+      <h3 class="basic-container__project-heading">Ace Embrace</h3>
+      <p>Ace Embrace’s logo is probably one of my favorite designs. When it came time to create the charity's web presence I wanted a different type of feeling compared to Ace’s usual design treatment of sporty and fast.</p>
       <p>I wanted Ace Embrace to slow down, create a warmer environment, evoking the feeling of your first game as a child, the thrill of seeing the players in action for that first time. Still while using brand colors of course. It was important to represent the many children’s charities Ace donated to so, Ace understands that feeling, they understand how going to an event can help guide the path our future generation.</p>
       <p>
-        <a href="http://www.aceembrace.com" target="blank">Visit Aceembrace.com</a><br />
+        <a href="http://www.aceembrace.com" target="blank">Visit the website</a><br />
       </p>
     </div>
     <div class="basic-container__bottom-knot"></div>
@@ -264,11 +314,11 @@
       </div>
     </div>
     <div class="basic-container__project-info">
-      <p class="process--heading">Firestorm Graphix</p>
+      <h3 class="basic-container__project-heading">Firestorm Graphix</h3>
       <p>Fast, energetic, these qualities are sought out when racers look for their decals. Firestorm Graphix wanted that speedy look,  and with a vast catalog of products, keeping the navigation clear was very important during the design process.</p>
       <p>With so many products being offered Firestorm didn’t want to hide their navigation in a dropdown menu. Customers would come to the ecommerce site with an agenda, rarely ever browsing. So keeping the full navigation open and persistent from page to page became a design choice later down the road.</p>
       <p>
-        <a href="http://www.firestormgraphix.com" target="blank">Visit Firestormgraphix.com</a><br />
+        <a href="http://www.firestormgraphix.com" target="blank">Visit the website</a><br />
       </p>
     </div>
     <div class="basic-container__bottom-knot"></div>
@@ -289,7 +339,7 @@
       <div class="designs-container--process">
         <div class="designs-container--process__col process--text">
           <!-- Name -->
-          <p class="process--heading">Ace Ticket drawings and illustrations</p>
+          <p class="basic-container__project--heading">Ace Ticket drawings and illustrations</p>
           <p>Often designs in the ticket broker industry are pretty cut and dry: insert a sports or event image, copy about being a fan or part of the crowd, name of the broker, and, if you're lucky to use it, the logo of a popular Boston sports team to bring it all home.</p>
           <p>It makes sense, but when everyone else is doing it, the only thing really setting these brokers apart is the cost of the seat they are trying to sell.</p>
           <p>So when the holidays came rolling around, I felt it was time to try something different, something more light and fun and with touch of familiarity, which gave me the idea to create "Jimmy the Snowfan", "New Year’s Jimmy", "Lovebirds", along with many others ideas.</p>
