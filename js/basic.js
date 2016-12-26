@@ -17,6 +17,11 @@ $(document).ready(function() {
     $('.embraceHero').attr("src", loc);
   });
 
+  $('.quanta1, .quanta2').on("click", function() {
+    var loc = $(this).attr("src");
+    $('.quantaImaging').attr("src", loc);
+  });
+
 
   var $nav_header    = $(window),
     header_height  = $('.body-container').height(),
