@@ -478,7 +478,7 @@ input[type=checkbox] {
   font-size: 22px;
   line-height: 26px;
   margin: 45px 0 50px 45px;
-  width: 70%; }
+  width: 60%; }
   .basic-container__project-info a {
     border-radius: 6px;
     border: solid 1px #4e3a69;
@@ -706,7 +706,6 @@ input[type=checkbox] {
   font-family: 'Rokkitt', serif; }
 
 .home-container__text {
-  width: 90%;
   margin-top: 60px; }
 
 @media only screen and (max-width: 40.063em) {
