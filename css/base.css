@@ -679,6 +679,11 @@ input[type=checkbox] {
   padding: 8px;
   width: 100%; }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
 @media only screen and (max-width: 40.063em) {
   .home-container__col-1--text textarea {
     min-height: 200px; }
