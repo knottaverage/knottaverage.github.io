@@ -849,6 +849,7 @@ input[type=number]::-webkit-outer-spin-button {
   color: #fff;
   cursor: pointer;
   font-family: 'Rokkitt', serif;
+  font-size: 22px;
   padding: 8px 12px; }
   .contact-button:hover {
     background: #D2A125;
