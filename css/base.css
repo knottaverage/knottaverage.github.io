@@ -480,9 +480,10 @@ input[type=checkbox] {
   margin: 45px 0 50px 45px;
   width: 60%; }
   .basic-container__project-info a {
+    background: #9c82bf;
     border-radius: 6px;
     border: solid 1px #4e3a69;
-    color: #4e3a69;
+    color: #fff;
     cursor: pointer;
     padding: 8px 12px; }
     .basic-container__project-info a:hover {
@@ -842,10 +843,10 @@ input[type=number]::-webkit-outer-spin-button {
   display: block; }
 
 .contact-button {
-  background: #fff;
+  background: #9c82bf;
   border-radius: 6px;
   border: solid 1px #4e3a69;
-  color: #4e3a69;
+  color: #fff;
   cursor: pointer;
   font-family: 'Rokkitt', serif;
   padding: 8px 12px; }
