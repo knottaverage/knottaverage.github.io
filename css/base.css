@@ -665,7 +665,7 @@ input[type=checkbox] {
   font-size: 22px;
   padding: 8px 0; }
 
-.home-container__col-1--text input[type=text] {
+.home-container__col-1--text input {
   border: solid 1px #999;
   display: block;
   font-size: 28px;
@@ -845,7 +845,7 @@ input[type=number]::-webkit-outer-spin-button {
 .contact-button {
   background: #9c82bf;
   border-radius: 6px;
-  border: solid 1px #4e3a69;
+  border: solid 1px #4e3a69 !important;
   color: #fff;
   cursor: pointer;
   font-family: 'Rokkitt', serif;
