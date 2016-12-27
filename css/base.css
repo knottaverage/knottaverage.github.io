@@ -842,13 +842,18 @@ input[type=checkbox] {
   display: block; }
 
 .contact-button {
-  color: #4e3a69;
-  padding: 8px 12px;
-  border-radius: 6px;
-  cursor: pointer;
-  border: solid 1px #4e3a69;
   background: #fff;
-  font-family: 'Rokkitt', serif; }
+  border-radius: 6px;
+  border: solid 1px #4e3a69;
+  color: #4e3a69;
+  cursor: pointer;
+  font-family: 'Rokkitt', serif;
+  padding: 8px 12px; }
+  .contact-button:hover {
+    background: #D2A125;
+    border: solid 1px transparent;
+    color: #fff;
+    text-decoration: none; }
 
 /* ==========
 
