@@ -700,20 +700,16 @@ input[type=checkbox] {
     text-decoration: underline; }
 
 .home-text {
-  font-size: 20px;
+  font-size: 22px;
   color: #222;
   line-height: 24px;
   font-family: 'Rokkitt', serif; }
 
 .home-container__text {
-  width: 80%;
+  width: 90%;
   margin-top: 60px; }
 
 @media only screen and (max-width: 40.063em) {
-  .home-text {
-    font-size: 22px;
-    color: #222; }
-
   .home-container__col-1--text {
     padding: 15px 12px; }
 
