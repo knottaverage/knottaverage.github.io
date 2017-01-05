@@ -22,6 +22,11 @@ $(document).ready(function() {
     $('.quantaImaging').attr("src", loc);
   });
 
+  $('.patternLab1, .patternLab2').on("click", function() {
+    var loc = $(this).attr("src");
+    $('.patternLab').attr("src", loc);
+  });
+
 
   var $nav_header    = $(window),
     header_height  = $('.body-container').height(),
@@ -38,5 +43,23 @@ $(document).ready(function() {
   }
 
   $(window).scroll(navSlide);
+
+  $(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+
+
 
 });

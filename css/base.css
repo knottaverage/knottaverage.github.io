@@ -193,6 +193,11 @@ nav {
     background: transparent;
     color: #b7afd0; }
 
+/* ==========
+
+  Social nav tool tips
+
+========== */
 .subnav {
   -ms-flex-direction: column;
   -webkit-box-direction: normal;
@@ -479,18 +484,23 @@ input[type=checkbox] {
   line-height: 26px;
   margin: 45px 0 50px 45px;
   width: 60%; }
-  .basic-container__project-info a {
+  .basic-container__project-info a.button {
     background: #9c82bf;
     border-radius: 6px;
     border: solid 1px #4e3a69;
     color: #fff;
     cursor: pointer;
     padding: 8px 12px; }
-    .basic-container__project-info a:hover {
+    .basic-container__project-info a.button:hover {
       background: #D2A125;
       border: solid 1px transparent;
       color: #fff;
       text-decoration: none; }
+  .basic-container__project-info a.button--disabled {
+    background: #ececec;
+    border: solid 1px #cacaca;
+    color: #cacaca;
+    pointer-events: none; }
 
 .basic-container__project-hero-image img,
 .basic-container__project-hero-image--solo img {
@@ -574,7 +584,85 @@ input[type=checkbox] {
     width: 100%; } }
 /* ==========
 
-  Snowman Designs Layout
+  Design nav & tool tip
+
+==========*/
+.design-nav__wrapper {
+  position: relative;
+  background: #fff;
+  width: 65px;
+  text-align: center; }
+
+@keyframes move {
+  0% {
+    transform: translate(50px, 0); }
+  100% {
+    transform: translate(0, 0); } }
+.design-nav__container {
+  position: fixed;
+  animation: move 0.5s ease; }
+
+.design-nav__heading {
+  padding: 4px; }
+
+.design-nav {
+  margin: 0;
+  padding: 0;
+  display: block; }
+  .design-nav li {
+    display: block;
+    padding: 4px; }
+  .design-nav a {
+    display: block; }
+
+.design-nav__image {
+  border: solid 1px #dedede;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'>\a           <filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/>\a           </filter></svg>#grayscale");
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  width: 100%; }
+  .design-nav__image:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%); }
+
+.design-nav__tooltip {
+  position: relative;
+  display: inline-block; }
+
+.design-nav__tooltiptext {
+  background-color: #9c82bf;
+  border-radius: 4px;
+  color: #fff;
+  padding: 5px 10px;
+  text-align: center;
+  visibility: hidden;
+  width: 190px;
+  /* Position the tooltip */
+  box-shadow: 0 1px 2px #000;
+  font-size: 18px;
+  left: -200px;
+  position: absolute;
+  top: 2px;
+  z-index: 1; }
+
+.design-nav__tooltiptext:before {
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #9c82bf;
+  border-right: 7px solid transparent;
+  border-top: 7px solid transparent;
+  content: "";
+  height: 0;
+  right: -14px;
+  position: absolute;
+  top: 8px;
+  width: 0; }
+
+.design-nav__tooltip:hover .design-nav__tooltiptext {
+  visibility: visible; }
+
+/* ==========
+
+  Designs Layout
 
 ========== */
 .designs-container {
@@ -634,6 +722,18 @@ input[type=checkbox] {
   display: block;
   font-size: 28px;
   font-weight: 400; }
+
+.project__heading {
+  color: #444;
+  font-size: 16px;
+  margin: 0;
+  padding: 0; }
+
+.project__text {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  padding: 0; }
 
 /* ==========
 
