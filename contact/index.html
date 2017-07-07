@@ -5,144 +5,114 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>Contact</title>
+	<title>Contact, Stephen Knott</title>
 	<meta description="Stephen Knott UI Designer / Front-end Developer
 " />
 	<link rel="stylesheet" href="/css/base.css">
+	<link rel="stylesheet" href="/css/animate.css">
+	<link rel="stylesheet" href="/css/modaal.css">
 	<link rel="canonical" href="http://localhost:4000/contact/">
-	<link href="https://fonts.googleapis.com/css?family=Rokkitt|Ubuntu" rel="stylesheet">	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Rokkitt" rel="stylesheet">
+	<script src="/js/jquery.js"></script>
+	<script src="/js/modernizr-custom.js"></script>
 	<script src="/js/basic.js"></script>
+	<script src="/js/modaal.js"></script>
 </head>
 
 
 <body>
-  <div class="body-container">
-    <div class="body-container__left-column">
-      <div class="logo-container">
-    		<a href="/">
-          <span class="logo-container__bold">Knottaverage's</span>
-          <span class="logo-container__subtext">pixels and pencils.</span>
-        </a>
-    	</div>
-      <nav role="navigation" class="mobile-nav">
-  <label for="show-menu" class="nav__open-button">Menu</label>
-  <input type="checkbox" id="show-menu" role="button">
-  <ul class="menu">
-		<li>
-			<div>
-				<label for="show-menu" class="show-menu close-menu">
-					<input type="checkbox" id="show-menu" role="button">
-					<div class="nav__close-button">Close</span>
-				</label>
-			</div>
-		</li>
-    <li><a href="/" >Bio</a></li>
-    <li><a href="/designs/" >Design</a></li>
-    <li><a href="/code-snippets/" >Snippets</a></li>
+  <div class="new__logo-container animated fadeIn">
+  <a href="/"><img src="../img/logo.svg" /></a>
+</div>
+<nav role="navigation" class="">
+  <div class="new__menu-button">
+    <span>Menu</span>
+    <span>
+      <img src="../img/new__hamburger--purple.svg"/>
+    </span>
+  </div>
+  <ul class="new__nav">
+    <li><a href="/" >Home</a></li>
+    <li><a href="/designs/" >Portfolio</a></li>
+    <li><a href="/snippets/" >Snippets</a></li>
     <li><a href="/contact/" class="active">Contact</a></li>
-    <!--<li><a href="/notes/">Notes</a></li>-->
-    <div class="subnav">
-      <a href="https://www.linkedin.com/in/knottaverage" target="_blank">
-        <span class="subnav__icon tooltip">
-          <img src="/img/linkedin.svg" alt="LinkedIn" class="linkedin" />
-          <span class="tooltiptext">LinkedIn</span>
-        </span>
-      </a>
-      <a href="https://github.com/knottaverage" target="_blank">
-        <span class="subnav__icon tooltip">
-          <img src="/img/github.svg" alt="Github" />
-          <span class="tooltiptext">Github</span>
-        </span>
-      </a>
-      <a href="http://codepen.io/knottaverage/" target="_blank">
-        <span class="subnav__icon tooltip">
-          <img src="/img/codepen.svg" alt="Codepen" />
-          <span class="tooltiptext">Codepen</span>
-        </span>
-      </a>
-      <a href="http://www.knottaverage.com/downloads/StephenKnottUXDesignresume.pdf" target="_blank">
-        <span class="subnav__icon tooltip">
-          <img src="/img/document-icon.svg" alt="Resume" />
-          <span class="tooltiptext">Resume</span>
-        </span>
-      </a>
-    </div>
-    <div class="contact">
-      This website is built with Jekyll and hosted on Github.
-    </div>
-    <div>
+    <li class="new__close-button">
+      <span><img src="../img/new__close-button.svg"/></span>
+    </li>
   </ul>
 </nav>
 
-<!--
-<nav class="nav clear" role="navigation">
-	<div class="logo-container">
-		<a href="/"><span class="logo-container__bold">Knottaverage's</span> pixels and pencils.</a>
-	</div>
-  <label for="show-menu" class="nav__open-button">
-		Menu
-	</label>
-  <input type="checkbox" id="show-menu" role="button">
-  <div class="menu">
-    <ul class="menubar">
-			<li>
-        <div>
-          <label for="show-menu" class="show-menu close-menu">
-						<input type="checkbox" id="show-menu" role="button">
-						<div class="nav__close-button">Close</span>
-					</label>
-        </div>
-      </li>
-			<li>
-				<a href="/">Bio</a></li>
-			</li>
-			<li>
-				<a href="/designs/">Design</a></li>
-			</li>
-			<li>
-				<a href="/code-snippets/">Snippets</a></li>
-			</li>
-			<li>
-				<a href="/notes/">Notes</a>
-			</li>
-			<li class="mobile-contact">knottaverage@gmail.com<br>707-494-1384</li>
-    </ul>
-  </div>
-</nav>
--->
-
-    </div>
-    <div class="body-container__right-column">
-      <div class="">
-  <div class="basic-container">
-    <h1 class="basic-container__heading">Contact</h1>
-    <div class="basic-container__top-knot"></div>
-    <div class="home-container__col-1--text">
-      <p>Please use the form below to get the conversation started.</p>
-      <form action="https://getsimpleform.com/messages?form_api_token=1311b9c44f7242816d1729e5f8f9957e" method="post">
-        <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-        <input type="hidden" name="redirect_to" value="http://knottaverage.com/thank-you/" />
-        <!-- all your input fields here.... -->
-        <label>Full Name</label>
-        <input type="text" name="fullname" class="text-input" />
-        <label>Email</label>
-        <input type="email" name="email" class="text-input" />
-        <label>Phone</label>
-        <input type="number" name="phone" class="text-input" />
-        <label>Message</label>
-        <textarea name="message" type="text" class="text-input" id="message" rows="10"></textarea>
-        <div>
-          <input type="submit" value="Contact me" class="contact-button" />
-        </div>  
-      </form>
-    </div>
+  <div>
+  <div class="header__wrapper">
+    <h1>Contact Me</h1>
+    <p>Please use the form below to get the conversation started.</p>
   </div>
 </div>
+<div class="contact-container">
+  <form action="https://getsimpleform.com/messages?form_api_token=1311b9c44f7242816d1729e5f8f9957e" method="post">
+    <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+    <input type='hidden' name='redirect_to' value='http://knottaverage.com/thank-you/' />
+    <!-- all your input fields here.... -->
+    <div class="input-container">
+      <label>Full Name</label>
+      <input type="text" name="fullname" class="text-input" />
+    </div>
+    <div class="input-container">
+      <label>Email</label>
+      <input type="email" name="email" class="text-input" />
+    </div>
+    <div class="input-container">
+      <label>Phone</label>
+      <input type="number" name="phone" class="text-input" />
+    </div>
+    <div class="input-container">
+      <label>Message</label>
+      <textarea name="message" type="text" class="text-input" id="message" rows="10"></textarea>
+    </div>
+    <div>
+      <input type='submit' value='Contact Me' class="button button--purple" />
+    </div>
+  </form>
+</div>
 
-      <div class="test-body-size"></div>
+  <footer>
+  <div class="footer__icon-container">
+    <div>
+      <a href="https://www.linkedin.com/in/knottaverage" target="_blank">
+        <img src="../img/linkedin.svg" />
+      </a>
+    </div>
+    <div>
+      <a href="https://github.com/knottaverage" target="_blank">
+        <img src="../img/github.svg" />
+      </a>
+    </div>
+    <div>
+      <a href="https://codepen.io/knottaverage" target="_blank">
+        <img src="../img/codepen.svg" />
+      </a>
+    </div>
+    <div>&bull;</div>
+    <!--<div>
+      <a href="" target="_blank">
+        <img src="../img/document-icon.svg" />
+      </a>
+    </div>-->
+    <div>
+      knottaverage[@]gmail.com
+    </div>
+    <div>&bull;</div>
+    <div>
+      (707) 494-1384
     </div>
   </div>
+</footer>
+
+  
+    <div class="portfolio-back">
+      <a href="/designs/">Back to Portfolio</a>
+    </div>
+  
 </body>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
