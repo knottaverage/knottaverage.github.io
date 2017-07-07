@@ -452,13 +452,6 @@ h1, h2, h3 {
   max-width: 420px;
   padding: 4rem; }
 
-.profile__header {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex; }
-
 .profile__avatar {
   width: 100px;
   height: 100px; }
