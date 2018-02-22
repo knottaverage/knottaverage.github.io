@@ -1,0 +1,504 @@
+body {
+  background: #ffffff;
+  color: #444444;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  height: 100%;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+.body--full-height {
+  height: 100%; }
+
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+.clear:before,
+.clear:after {
+  content: ' ';
+  display: table; }
+
+.clear:after {
+  clear: both; }
+
+.clear {
+  *zoom: 1; }
+
+a {
+  text-decoration: none; }
+
+/* Typography */
+h1 {
+  font-family: "Crimson Text", serif;
+  font-size: 3em;
+  line-height: 1em; }
+  @media only screen and (max-width: 414px) {
+    h1 {
+      font-size: 3em; } }
+
+h1.white {
+  color: #ffffff;
+  font-weight: 400; }
+
+h1.centered {
+  text-align: center; }
+
+/* Button */
+.button {
+  border-radius: 100px;
+  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 0.75em 3em 0.5em;
+  text-align: center;
+  transition: all 0.3s ease 0s; }
+
+.button--white {
+  background: #ffffff;
+  color: #003C8E; }
+  .button--white:hover {
+    background: #00214f;
+    color: white; }
+
+.home {
+  background: url("../img/2018/home-background-alt.png") center top no-repeat;
+  background-size: cover;
+  display: block;
+  height: calc(100vh);
+  min-height: 786px; }
+
+.work {
+  background: url("../img/2018/work-background-alt.png") center top no-repeat;
+  background-size: cover;
+  display: block;
+  height: calc(100vh);
+  min-height: 786px;
+  overflow: scroll; }
+
+.healthcare {
+  background: url("../img/2018/healthcare/background-page.png") center top no-repeat;
+  background-size: cover;
+  display: block;
+  height: calc(100vh);
+  max-height: 675px; }
+  .healthcare h2 {
+    color: #125A5A; }
+  @media only screen and (max-width: 1024px) {
+    .healthcare {
+      background-size: 135%; } }
+  @media only screen and (max-width: 414px) {
+    .healthcare {
+      background-size: 165%; } }
+
+.racing {
+  background: url("../img/2018/racing/background-page.png") center top no-repeat;
+  background-size: cover;
+  display: block;
+  height: calc(100vh);
+  max-height: 675px; }
+  @media only screen and (max-width: 1024px) {
+    .racing {
+      background-size: 135%; } }
+  @media only screen and (max-width: 414px) {
+    .racing {
+      background-size: 165%; } }
+
+.ace {
+  background: url("../img/2018/ace/background-page.png") center top no-repeat;
+  background-size: cover;
+  display: block;
+  height: calc(100vh);
+  max-height: 675px; }
+  @media only screen and (max-width: 1024px) {
+    .ace {
+      background-size: 135%; } }
+  @media only screen and (max-width: 414px) {
+    .ace {
+      background-size: 165%; } }
+
+.quanta {
+  background: url("../img/2018/quanta/background-page.png") center top no-repeat;
+  background-size: cover;
+  display: block;
+  height: calc(100vh);
+  max-height: 675px; }
+  @media only screen and (max-width: 1024px) {
+    .quanta {
+      background-size: 135%; } }
+  @media only screen and (max-width: 414px) {
+    .quanta {
+      background-size: 165%; } }
+
+.homehealth {
+  background: url("../img/2018/homehealth/background-page.png") center top no-repeat;
+  background-size: cover;
+  display: block;
+  height: calc(100vh);
+  max-height: 675px; }
+  @media only screen and (max-width: 1024px) {
+    .homehealth {
+      background-size: 135%; } }
+  @media only screen and (max-width: 414px) {
+    .homehealth {
+      background-size: 165%; } }
+
+.portfolio-copy {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 50%;
+  color: #fff; }
+  .portfolio-copy h2 {
+    font-family: "Crimson Text", serif;
+    color: #fff; }
+
+/* Header */
+.header_wrapper {
+  margin: 0 auto;
+  padding: 1em 1em 0 1em;
+  position: relative;
+  width: 100%; }
+
+.header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%; }
+
+.logo_container img {
+  width: 75px; }
+@media only screen and (max-width: 414px) {
+  .logo_container {
+    margin-right: 0.5em; }
+    .logo_container img {
+      width: 50px; } }
+
+.home_container {
+  color: #ffffff;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 1em 4em 0;
+  width: 100%; }
+  @media only screen and (max-width: 414px) {
+    .home_container {
+      padding: 1em; } }
+
+.highlight {
+  background: #FDE501;
+  height: 2px;
+  margin: 0 auto;
+  max-width: 14em; }
+
+.home_container--copy_wrapper {
+  max-width: 700px;
+  width: 100%;
+  margin-top: 8em;
+  margin-left: 4em;
+  text-align: center; }
+  @media only screen and (max-width: 414px) {
+    .home_container--copy_wrapper {
+      margin-top: inherit;
+      margin-left: inherit; } }
+
+.home_container--copy_container {
+  margin: 0 auto;
+  font-size: 21px; }
+
+/* Navigation */
+.nav_wrapper ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  list-style: none;
+  padding: 0; }
+  .nav_wrapper ul li {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-left: 1em; }
+    .nav_wrapper ul li a.active {
+      text-decoration: underline; }
+    .nav_wrapper ul li a {
+      display: block;
+      color: white; }
+      .nav_wrapper ul li a:hover {
+        text-decoration: underline; }
+    @media only screen and (max-width: 414px) {
+      .nav_wrapper ul li {
+        margin: 0 1em; } }
+
+/* Portfolio Grid */
+.grid_navigation {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0 3em; }
+  .grid_navigation a {
+    color: #fff; }
+
+.grid_wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto; }
+  .grid_wrapper .grid_cell {
+    margin: 1.25em;
+    height: 465px;
+    width: 360px;
+    margin-bottom: 2.5em; }
+    .grid_wrapper .grid_cell .card {
+      text-align: center;
+      color: #fff; }
+      .grid_wrapper .grid_cell .card h3 {
+        font-family: "Crimson Text", serif;
+        font-size: 1.5em; }
+      .grid_wrapper .grid_cell .card .topshot {
+        position: relative;
+        width: 100%;
+        max-width: 405px;
+        top: -1em;
+        text-align: center;
+        margin: 0 auto; }
+        .grid_wrapper .grid_cell .card .topshot img {
+          max-width: 375px;
+          width: 100%; }
+      .grid_wrapper .grid_cell .card .copy {
+        padding: 0 1em;
+        position: relative;
+        top: -2em; }
+
+.grid_cell--healthcare {
+  background: url("../img/2018/healthcare/background-page.png") center top no-repeat;
+  background-size: cover; }
+
+.grid_cell--racing {
+  background: url("../img/2018/racing/background-page.png") center top no-repeat;
+  background-size: cover; }
+
+.grid_cell--giving {
+  background: url("../img/2018/giving/background-page.png") center top no-repeat;
+  background-size: cover; }
+
+.grid_cell--homehealth {
+  background: url("../img/2018/homehealth/background-page.png") center top no-repeat;
+  background-size: cover; }
+
+.grid_cell--ace {
+  background: url("../img/2018/ace/background-page.png") center top no-repeat;
+  background-size: cover; }
+
+.grid_cell--quanta {
+  background: url("../img/2018/quanta/background-page.png") center top no-repeat;
+  background-size: cover; }
+
+.portfolio_hero--pixel2lg {
+  max-width: 425px;
+  margin: 0 auto; }
+  .portfolio_hero--pixel2lg img {
+    width: 100%; }
+  @media only screen and (max-width: 1024px) {
+    .portfolio_hero--pixel2lg {
+      max-width: 45%; } }
+  @media only screen and (max-width: 414px) {
+    .portfolio_hero--pixel2lg {
+      max-width: 195px; } }
+
+/* Portfolio 2017 */
+.css-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center; }
+  .css-flex div {
+    margin-right: 0.5rem; }
+    .css-flex div img {
+      width: 100%; }
+  .css-flex:last-child {
+    margin-bottom: 2rem; }
+  @media only screen and (max-width: 414px) {
+    .css-flex {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+
+.gray-background {
+  max-height: 840px; }
+  @media only screen and (max-width: 414px) {
+    .gray-background {
+      background-position: center center; } }
+
+.portfolio__container--1col {
+  position: relative;
+  text-align: center; }
+  .portfolio__container--1col img {
+    width: 100%;
+    max-width: 1006px; }
+  @media only screen and (max-width: 414px) {
+    .portfolio__container--1col {
+      padding: 0.5rem; } }
+  .portfolio__container--1col h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 4rem 0 0.5rem;
+    padding-bottom: 0.5em; }
+    @media only screen and (max-width: 414px) {
+      .portfolio__container--1col h2 {
+        font-size: 2rem; } }
+  .portfolio__container--1col h2 + p {
+    margin: 0 0 1rem 0;
+    font-size: 1rem; }
+
+.portfolio__container--1col > .css-flex {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem; }
+  @media only screen and (max-width: 414px) {
+    .portfolio__container--1col > .css-flex {
+      flex-direction: column; } }
+
+.portfolio-description {
+  text-align: left;
+  max-width: 550px;
+  width: 100%;
+  margin: 5rem auto 3rem; }
+  .portfolio-description h2 {
+    display: block;
+    font-family: "Crimson Text", serif; }
+  .portfolio-description p {
+    margin-bottom: 4rem;
+    line-height: 2rem; }
+  @media only screen and (max-width: 414px) {
+    .portfolio-description {
+      padding: 0 1.5rem; } }
+
+.portfolio-back {
+  font-size: 14px;
+  position: fixed;
+  right: 1rem;
+  text-align: center;
+  top: 6rem; }
+  .portfolio-back a {
+    color: #026DFF;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 0.75rem 1rem 0.5rem;
+    border-radius: 2rem;
+    border: solid 1px #fff; }
+    .portfolio-back a:hover {
+      background-color: #fff; }
+  @media only screen and (max-width: 414px) {
+    .portfolio-back {
+      bottom: 1rem;
+      left: 0;
+      margin: auto;
+      right: 0;
+      top: inherit; } }
+
+.profile__container {
+  border: solid 1px #979797;
+  max-width: 420px;
+  padding: 4rem; }
+
+.profile__avatar {
+  width: 100px;
+  height: 100px; }
+
+.story {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+  @media only screen and (max-width: 414px) {
+    .story {
+      flex-direction: column; } }
+
+.story__image {
+  width: 450px; }
+  .story__image img {
+    width: 100%; }
+  @media only screen and (max-width: 414px) {
+    .story__image {
+      width: 100%; } }
+
+.story__copy {
+  flex: 1; }
+
+/* Footer */
+.footer {
+  width: 100%;
+  font-size: 12px;
+  background: #222; }
+  .footer ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    padding: 1em 0;
+    margin: 0; }
+    .footer ul li {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      margin-right: 1em; }
+      .footer ul li a {
+        color: #fff; }
+        .footer ul li a:hover {
+          text-decoration: underline; }
+
+.hero-container {
+  display: flex;
+  height: 400px; }
+  .hero-container .healthcare_hero--copy {
+    flex: 1; }
+  .hero-container .healthcare_hero--image {
+    flex: 1;
+    background: url("../img/2018/healthcare/hero.png") center right no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }

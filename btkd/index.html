@@ -12,35 +12,102 @@
 	<link rel="stylesheet" href="/css/animate.css">
 	<link rel="stylesheet" href="/css/modaal.css">
 	<link rel="canonical" href="http://localhost:4000/btkd/">
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Rokkitt" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Josefin+Sans" rel="stylesheet">
 	<script src="/js/jquery.js"></script>
 	<script src="/js/modernizr-custom.js"></script>
 	<script src="/js/basic.js"></script>
 	<script src="/js/modaal.js"></script>
+	<meta name="google-site-verification" content="5BWzNAGHFnlogtEtAHS5DoGgMlZmnk3VCAQ3j9t5kms" />
 </head>
 
 
 <body>
-  <div class="new__logo-container animated fadeIn">
-  <a href="/"><img src="../img/logo.svg" /></a>
-</div>
-<nav role="navigation" class="">
-  <div class="new__menu-button">
-    <span>Menu</span>
-    <span>
-      <img src="../img/new__hamburger--purple.svg"/>
-    </span>
-  </div>
-  <ul class="new__nav">
-    <li><a href="/" >Home</a></li>
-    <li><a href="/designs/" >Portfolio</a></li>
-    <li><a href="/snippets/" >Snippets</a></li>
+  <nav role="navigation" class="mobile-nav">
+  <label for="show-menu" class="nav__open-button">Menu</label>
+  <input type="checkbox" id="show-menu" role="button">
+  <ul class="menu">
+		<li>
+			<div>
+				<label for="show-menu" class="show-menu close-menu">
+					<input type="checkbox" id="show-menu" role="button">
+					<div class="nav__close-button">Close</span>
+				</label>
+			</div>
+		</li>
+    <li><a href="/" >Bio</a></li>
+    <li><a href="/designs/" >Design</a></li>
+    <li><a href="/code-snippets/" >Snippets</a></li>
     <li><a href="/contact/" >Contact</a></li>
-    <li class="new__close-button">
-      <span><img src="../img/new__close-button.svg"/></span>
-    </li>
+    <!--<li><a href="/notes/">Notes</a></li>-->
+    <div class="subnav">
+      <a href="https://www.linkedin.com/in/knottaverage" target="_blank">
+        <span class="subnav__icon tooltip">
+          <img src="/img/linkedin.svg" alt="LinkedIn" class="linkedin" />
+          <span class="tooltiptext">LinkedIn</span>
+        </span>
+      </a>
+      <a href="https://github.com/knottaverage" target="_blank">
+        <span class="subnav__icon tooltip">
+          <img src="/img/github.svg" alt="Github" />
+          <span class="tooltiptext">Github</span>
+        </span>
+      </a>
+      <a href="http://codepen.io/knottaverage/" target="_blank">
+        <span class="subnav__icon tooltip">
+          <img src="/img/codepen.svg" alt="Codepen" />
+          <span class="tooltiptext">Codepen</span>
+        </span>
+      </a>
+      <a href="http://www.knottaverage.com/downloads/StephenKnottUXDesignresume.pdf" target="_blank">
+        <span class="subnav__icon tooltip">
+          <img src="/img/document-icon.svg" alt="Resume" />
+          <span class="tooltiptext">Resume</span>
+        </span>
+      </a>
+    </div>
+    <div class="contact">
+      This website is built with Jekyll and hosted on Github.
+    </div>
+    <div>
   </ul>
 </nav>
+
+<!--
+<nav class="nav clear" role="navigation">
+	<div class="logo-container">
+		<a href="/"><span class="logo-container__bold">Knottaverage's</span> pixels and pencils.</a>
+	</div>
+  <label for="show-menu" class="nav__open-button">
+		Menu
+	</label>
+  <input type="checkbox" id="show-menu" role="button">
+  <div class="menu">
+    <ul class="menubar">
+			<li>
+        <div>
+          <label for="show-menu" class="show-menu close-menu">
+						<input type="checkbox" id="show-menu" role="button">
+						<div class="nav__close-button">Close</span>
+					</label>
+        </div>
+      </li>
+			<li>
+				<a href="/">Bio</a></li>
+			</li>
+			<li>
+				<a href="/designs/">Design</a></li>
+			</li>
+			<li>
+				<a href="/code-snippets/">Snippets</a></li>
+			</li>
+			<li>
+				<a href="/notes/">Notes</a>
+			</li>
+			<li class="mobile-contact">knottaverage@gmail.com<br>707-494-1384</li>
+    </ul>
+  </div>
+</nav>
+-->
 
   <div class="gray-background">
   <div class="header__wrapper">
@@ -85,38 +152,15 @@
   <img src="/img/designs/btkd/schedule-page.png" />
 </div>
 
-  <footer>
-  <div class="footer__icon-container">
-    <div>
-      <a href="https://www.linkedin.com/in/knottaverage" target="_blank">
-        <img src="../img/linkedin.svg" />
-      </a>
-    </div>
-    <div>
-      <a href="https://github.com/knottaverage" target="_blank">
-        <img src="../img/github.svg" />
-      </a>
-    </div>
-    <div>
-      <a href="https://codepen.io/knottaverage" target="_blank">
-        <img src="../img/codepen.svg" />
-      </a>
-    </div>
-    <div>&bull;</div>
-    <!--<div>
-      <a href="" target="_blank">
-        <img src="../img/document-icon.svg" />
-      </a>
-    </div>-->
-    <div>
-      knottaverage[@]gmail.com
-    </div>
-    <div>&bull;</div>
-    <div>
-      (707) 494-1384
-    </div>
-  </div>
-</footer>
+  <div class="footer">
+  <ul>
+    <li><a href="https://www.linkedin.com/knottaverage" target="_blank">LinkedIn</a></li>
+    <li><a href="https://dribbble.com/knottaverage" target="_blank">Dribbble</a></li>
+    <li><a href="http://www.twitter.com/knottaverage" target="_blank">Twitter</a></li>
+    <li><a href="http://www.codepen.com/knottaverage" target="_blank">CodePen</a></li>
+    <li><a href="https://www.interaction-design.org/stephen-knott" target="_blank">IDF</a></li>
+  </ul>
+</div>
 
   
     <div class="portfolio-back">
