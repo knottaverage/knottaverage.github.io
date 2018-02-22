@@ -111,7 +111,7 @@ h1.centered {
       background-size: 165%; } }
 
 .ace {
-  background: url("../img/2018/ace/background-page.png") center top no-repeat;
+  background: url("../img/2018/ace/background-page.jpg") center top no-repeat;
   background-size: cover;
   display: block;
   height: calc(100vh);
