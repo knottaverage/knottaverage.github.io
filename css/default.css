@@ -292,8 +292,7 @@ h1.centered {
         text-align: center;
         margin: 0 auto; }
         .grid_wrapper .grid_cell .card .topshot img {
-          max-width: 375px;
-          width: 100%; }
+          max-width: 375px; }
       .grid_wrapper .grid_cell .card .copy {
         padding: 0 1em;
         position: relative;
